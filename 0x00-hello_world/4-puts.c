@@ -1,6 +1,7 @@
 #include <stdio.h>
 /**
- * my_function - This is a description
+ * main - This is n entry point 
+ * return 0 as end of function 
  */
 int main(void)
 {
