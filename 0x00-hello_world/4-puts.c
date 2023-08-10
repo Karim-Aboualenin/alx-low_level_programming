@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main -This the main the entry point to code
+ * my_function - This is a description
  */
 int main(void)
 {
