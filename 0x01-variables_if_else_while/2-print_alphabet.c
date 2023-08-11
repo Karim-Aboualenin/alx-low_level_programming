@@ -6,13 +6,13 @@
 */
 int main(void)
 {
-  int c ='a';
-  int i;
+int c ='a';
+int i;
 
-  for (i = 0; i < 26; i++)
-  {
-    printf("%c",c++);
-  }
-  printf("\n");
-  return (0);
+for (i = 0; i < 26; i++)
+{
+  printf("%c", c++);
+}
+printf("\n");
+return (0);
 }
