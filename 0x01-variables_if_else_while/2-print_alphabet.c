@@ -6,13 +6,13 @@
 */
 int main(void)
 {
-int c = 'a';
+char c = 'a';
 int i;
 
 for (i = 0; i < 26; i++)
 {
-printf("%c", c++);
+putchar(c++);
 }
-printf("\n");
+putchar('\n');
 return (0);
 }
