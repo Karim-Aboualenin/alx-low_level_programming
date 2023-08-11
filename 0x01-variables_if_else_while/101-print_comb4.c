@@ -43,7 +43,7 @@ if (num_1 == 9)
 {
 num_0++;
 num_1 = num_0 + 1;
-num_2 = num_1 +1;
+num_2 = num_1 + 1;
 }
 }
 putchar('\n');
