@@ -12,12 +12,12 @@ int C = 'A';
 
 for (i = 0; i < 26; i++)
 {
-printf("%c", c++);
+putchar(c++);
 }
 for (i = 0; i < 26; i++)
 {
-printf("%c", C++);
+putchar(C++);
 }
-printf("\n");
+putchar('\n');
 return (0);
 }
