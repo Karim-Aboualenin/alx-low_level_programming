@@ -9,7 +9,7 @@ int main(void)
 int num_0 = 0;
 int num_1 = 0;
 
-while(num_0 < 9)
+while (num_0 < 9)
 {
 if (num_0 == num_1)
 {
