@@ -37,7 +37,7 @@ num_2 = num_0;
 else if (num_1 == 8)
 {
 num_1++;
-num_3 == 0;
+num_3 = 0;
 num_2 = num_0 + 1;
 }
 else
