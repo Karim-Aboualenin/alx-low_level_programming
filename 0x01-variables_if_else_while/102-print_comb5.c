@@ -46,9 +46,7 @@ num_0++;
 num_1 = 0;
 num_3 = num_1 + 1;
 num_2 = num_0;
-}
-}
-}
+}}}
 putchar('\n');
 return (0);
 }
