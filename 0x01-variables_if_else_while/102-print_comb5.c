@@ -1,43 +1,44 @@
 #include <stdio.h>
 
 /**
- *main - print a num pair from 00-99 but no repeats (00 01, 00 02, 00 03,...)
- *Return: Always 0 (Success)
- */
-
+ * main - the entry pint to function
+ * Return:return 0 if success
+*/
 int main(void)
 {
-	int tens;
-	int ones;
-	int t;
-	int o;
+int num_0 = 0, num_1 = 0, num_2 = 0,num_3=1;
 
-	for (tens = '0'; tens <= '9'; tens++) /*print first two digit combo*/
-	{
-		for (ones = '0'; ones <= '9'; ones++)
-		{
-		 	for (t = tens; t <= '9'; t++) /*print second of pair*/
-			{
-				for (o = ones + 1; o <= '9'; o++)
-				{
-					putchar(tens);
-					putchar(ones);
-					putchar(' ');
-					putchar(t);
-					putchar(o);
+while (num_0 < 10)
+{
 
-					if (!((tens == '9' && ones == '8') &&
-					      (t == '9' && o == '9')))
-					{
-						putchar(',');
-						putchar(' ');
-					}
-				}
-				o = '0';
-			}
-		}
-	}
-	putchar('\n');
-
-	return (0);
+putchar(48 + num_0);
+putchar(48 + num_1);
+putchar(' ');
+putchar(48 + num_2);
+putchar(48 + num_3++);
+if (num_0 != 7 || num_1 != 8 || num_2 != 10)
+{
+putchar(',');
+putchar(' ');
+}
+if (num_3 == 10)
+{
+num_2++;
+num_3 = 0;
+}
+if (num_2 == 10)
+{
+if (num_1 != 8)
+num_1++;
+else
+{
+num_0++;
+num_1 = 0;
+}
+num_3 = num_1+1;
+num_2 = num_0;
+}
+}
+putchar('\n');
+return (0);
 }
