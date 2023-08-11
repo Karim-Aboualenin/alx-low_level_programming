@@ -6,7 +6,7 @@
 */
 int main(void)
 {
-int num_0 = 0, num_1 = 0, num_2 = 0,num_3=1;
+int num_0 = 0, num_1 = 0, num_2 = 0, num_3 = 1;
 
 while (num_0 < 10)
 {
@@ -35,7 +35,7 @@ else
 num_0++;
 num_1 = 0;
 }
-num_3 = num_1+1;
+num_3 = num_1 + 1;
 num_2 = num_0;
 }
 }
