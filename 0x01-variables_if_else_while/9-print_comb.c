@@ -7,7 +7,6 @@
 int main(void)
 {
 int num = 0;
-int c = 'a';
 int i;
 
 for (i = 0; i < 10; i++)
