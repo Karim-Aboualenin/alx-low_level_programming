@@ -28,24 +28,21 @@ num_3 = 0;
 }
 if (num_2 == 10)
 {
-if (num_1 < 8)
-{
+if (num_1 <= 8)
 num_1++;
-num_3 = num_1 + 1;
-num_2 = num_0;
-}
-else if (num_1 == 8)
-{
-num_1++;
-num_2 = num_0 + 1;
-}
 else
 {
 num_0++;
 num_1 = 0;
+}
 num_3 = num_1 + 1;
 num_2 = num_0;
-}}}
+if (num_1 == 9)
+{
+num_3 = 0;
+num_2 = num_0 + 1;
+}
+}}
 putchar('\n');
 return (0);
 }
