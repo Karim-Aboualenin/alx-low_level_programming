@@ -1,27 +1,42 @@
 #include <stdio.h>
 
 /**
- *main - print a num pair from 00-99 but no repeats (00 01, 00 02, 00 03,...)
- *Return: Always 0 (Success)
- */
-
+ * main - the entry pint to function
+ * Return:return 0 if success
+*/
 int main(void)
 {
-int p, q;
+int num_0 = 0, num_1 = 0, num_2 = 0,num_3=1;
 
-for (p = 0; p<98; p++)
+while (num_0 < 10)
 {
-for(q=p+1;q<=99;q++)
-{
-putchar(p/10+'0');
-putchar(p%10+'0');
+
+putchar(48 + num_0);
+putchar(48 + num_1);
 putchar(' ');
-putchar(q/10+'0');
-putchar(q%10+'0');
-if (p == 98 && q == 99)
-continue;
+putchar(48 + num_2);
+putchar(48 + num_3++);
+if (num_0 != 7 || num_1 != 8 || num_2 != 10)
+{
 putchar(',');
-putchar(' '); 
+putchar(' ');
+}
+if (num_3 == 10)
+{
+num_2++;
+num_3 = 0;
+}
+if (num_2 == 10)
+{
+if (num_1 != 8)
+num_1++;
+else
+{
+num_0++;
+num_1 = 0;
+}
+num_3 = num_1+1;
+num_2 = num_0;
 }
 }
 putchar('\n');
