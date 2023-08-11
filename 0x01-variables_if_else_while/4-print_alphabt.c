@@ -14,8 +14,8 @@ for (i = 0; i < 26; i++)
 if (c == 'e' || c == 'q')
 c++;
 else
-printf("%c", c++);
+putchar(c++);
 }
-printf("\n");
+putchar('\n);
 return (0);
 }
