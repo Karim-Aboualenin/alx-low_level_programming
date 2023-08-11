@@ -10,7 +10,7 @@ int num_0 = 0;
 int num_1 = 0;
 int num_2 = 0;
 
-while (num_0 < 7)
+while (num_0 < 8)
 {
 if (num_1 == num_2)
 {
@@ -37,9 +37,14 @@ putchar(' ');
 if (num_2 == 10)
 {
 num_1++;
-num_2 = num_0 + 1;
+num_2 = num_1 + 1;
 }
-
+if (num_1 == 9)
+{
+num_0++;
+num_1 = num_0 + 1;
+num_2 = num_1 +1;
+}
 }
 putchar('\n');
 return (0);
