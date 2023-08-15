@@ -23,26 +23,22 @@ _putchar ('0');
 continue;
 }
 mul = num * i;
-if (mul < 10)
-{
 _putchar (',');
 _putchar (' ');
+if (mul < 10)
+{
 _putchar (' ');
 _putchar (' ');
 _putchar ('0' + mul);
 }
 else if (mul < 100)
 {
-_putchar(',');
-_putchar(' ');
 _putchar(' ');
 _putchar('0' + mul / 10);
 _putchar('0' + mul % 10);
 }
 else
 {
-_putchar(',');
-_putchar(' ');
 _putchar('0' + mul / 100);
 _putchar('0' + ((mul / 10) % 10));
 _putchar('0' + mul % 10);
