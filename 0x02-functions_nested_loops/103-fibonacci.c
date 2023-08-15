@@ -10,7 +10,7 @@ int a = 1;
 long b = 2;
 long temp;
 long sum = a + b;
-long even sum_even;
+long sum_even;
 printf("%d, %li, ", a, b);
 while (sum < 4000000)
 {
