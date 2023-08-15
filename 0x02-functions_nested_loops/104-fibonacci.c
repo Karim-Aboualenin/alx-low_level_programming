@@ -27,12 +27,12 @@ for (i = 0; i < 7; i++)
 {
 carry = (a_end + b_end) / 100000000000;
 sum_end = (a_end + b_end) -carry * 10000000000;
-sum_start = (a_start + b_start) + carry;
+sum_start = (a_start + b_start) +carry;
 printf(", %li%li", sum_start, sum_end);
 a_start = b_start;
 a_end = b_end;
 b_start = sum_start;
-b_end = b_end;
+b_end = sum_end;
 }
 printf("\n");
 return (0);
