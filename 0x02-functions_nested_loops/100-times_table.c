@@ -12,9 +12,7 @@ if (n > 15 || n < 0)
 }
 else
 {
-int num = 0;
-int i = 0;
-int mul = 0;
+int num = 0;int i = 0;int mul = 0;
 for (num = 0; num <= n; num++)
 {
 for (i = 0; i <= n; i++)
@@ -48,9 +46,5 @@ _putchar(' ');
 _putchar('0' + mul / 100);
 _putchar('0' + ((mul / 10) % 10));
 _putchar('0' + mul % 10);
-}
-}
-_putchar('\n');
-}
-}
-}
+}}
+_putchar('\n');}}}
