@@ -11,16 +11,28 @@ int i = 0;
 int mul = 0;
 for (num = 0; num < 10; num++)
 {
-for(i = 0; i < 10; i++)
+for (i = 0; i < 10; i++)
 {
-mul = num * i; 
+mul = num * i;
+if (mul < 10)
+{
+_putchar ('0' + mul);
+if (i != 9)
+{
+_putchar (',');
+_putchar (' ');
+_putchar (' ');
+}
+}
+else
+{
 _putchar ('0' + mul / 10);
 _putchar ('0' + mul % 10);
 if(i != 9)
 {
 _putchar (',');
 _putchar (' ');
-_putchar (' ');  
+}
 }
 }
 _putchar ('\n');
