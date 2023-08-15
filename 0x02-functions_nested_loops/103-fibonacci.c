@@ -11,7 +11,6 @@ long b = 2;
 long temp;
 long sum = a + b;
 long sum_even;
-printf("%d, %li, ", a, b);
 while (sum < 4000000)
 {
 temp = sum;
