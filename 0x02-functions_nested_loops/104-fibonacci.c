@@ -7,10 +7,10 @@
 int main(void)
 {
 int a = 1;
-long b = 2;
-long temp;
+unsigned long b = 2;
+unsigned long temp;
 int i;
-long sum = a + b;
+unsigned long sum = a + b;
 printf("%d, %li, ", a, b);
 for (i = 0; i < 97; i++)
 {
