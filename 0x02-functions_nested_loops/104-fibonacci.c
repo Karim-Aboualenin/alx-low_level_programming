@@ -34,5 +34,6 @@ a_end = b_end;
 b_start = sum_start;
 b_end = b_end;
 }
+printf("\n");
 return (0);
 }
