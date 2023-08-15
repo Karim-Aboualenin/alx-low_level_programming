@@ -11,7 +11,7 @@ int i = 0;
 int mul = 0;
 for (num = 0; num < 10; num++)
 {
-for(i = 0; i < 10; i++)
+for (i = 0; i < 10; i++)
 {
 if (i == 0)
 {
