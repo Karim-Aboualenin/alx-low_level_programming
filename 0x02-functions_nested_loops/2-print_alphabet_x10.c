@@ -4,7 +4,7 @@
  * print_alphabet_x10 - print alphabets 10 times, followed by new line
  * Return: nothing
  */
-void print_alphabet(void)
+void print_alphabet_x10(void)
 {
 int c = 'a';
 int i,j;
