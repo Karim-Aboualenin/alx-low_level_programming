@@ -14,15 +14,15 @@ for (num = 0; num < 10; num++)
 for(i = 0; i < 10; i++)
 {
 mul = num * i; 
-ـputchar('0' + mul / 10);
-ـputchar('0' + mul % 10);
+_putchar ('0' + mul / 10);
+ـputchar ('0' + mul % 10);
 if(i != 9)
 {
-_putchar(',');
-_putchar(' ');
-_putchar(' ');  
+_putchar (',');
+_putchar (' ');
+_putchar (' ');  
 }
 }
-_putchar('\n');
+_putchar ('\n');
 }
 }
