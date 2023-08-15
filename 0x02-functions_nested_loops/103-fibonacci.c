@@ -7,10 +7,10 @@
 int main(void)
 {
 int a = 1;
-long b = 2;
-long temp;
-long sum = a + b;
-long sum_even;
+int b = 2;
+int temp;
+int sum = a + b;
+int sum_even;
 while (sum < 4000000)
 {
 temp = sum;
@@ -19,6 +19,6 @@ b = temp;
 if (sum % 2 == 0)
 sum_even += sum;
 }
-printf("%li\n", sum_even);
+printf("%d\n", sum_even);
 return (0);
 }
