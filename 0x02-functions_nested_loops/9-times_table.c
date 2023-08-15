@@ -15,7 +15,7 @@ for(i = 0; i < 10; i++)
 {
 mul = num * i; 
 _putchar ('0' + mul / 10);
-ـputchar ('0' + mul % 10);
+_putchar ('0' + mul % 10);
 if(i != 9)
 {
 _putchar (',');
