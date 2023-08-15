@@ -9,9 +9,8 @@ int main(void)
 int a = 1;
 long b = 2;
 long temp;
-int i;
 long sum = a + b;
-sum_even;
+long even sum_even;
 printf("%d, %li, ", a, b);
 while (sum < 4000000)
 {
