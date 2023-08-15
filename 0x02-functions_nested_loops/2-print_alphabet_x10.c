@@ -15,6 +15,6 @@ for (i = 0; i < 26; i++)
 _putchar(c++);
 }
 _putchar('\n');
-c = 'a'
+c = 'a';
 }
 }
