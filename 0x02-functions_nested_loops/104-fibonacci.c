@@ -11,13 +11,13 @@ unsigned long b = 2, b_start, b_end;
 int i;
 unsigned long sum , sum_start, sum_end;
 unsigned long carry;
-printf("%d, %li", a, b);
+printf("%li, %li", a, b);
 for (i = 0; i < 90; i++)
 {
 sum = a + b;
 a = b;
 b = sum;
-printf(", %lu", sum);
+printf(", %li", sum);
 }
 a_start = a / 100000000000;
 a_end = a % 100000000000;
