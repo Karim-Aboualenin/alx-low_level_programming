@@ -7,7 +7,7 @@
 int main(void)
 {
 unsigned long a = 1, a_start, a_end;
-unsigned long b = 2, b_start, b_end
+unsigned long b = 2, b_start, b_end;
 int i;
 unsigned long sum, sum_start, sum_end;
 unsigned long carry;
