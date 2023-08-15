@@ -11,7 +11,7 @@ int b = 2;
 int temp;
 int i;
 int sum = a + b;
-printf("%d, %d\n", a, b);
+printf("%d, %d", a, b);
 for (i = 0; i < 50;i++)
 {
 printf ("%d, ", sum);
