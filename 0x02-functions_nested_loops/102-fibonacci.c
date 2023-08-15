@@ -7,17 +7,18 @@
 int main()
 {
 int a = 1;
-int b = 2;
-int temp;
+long b = 2;
+long temp;
 int i;
-int sum = a + b;
+long sum = a + b;
 printf("%d, %d, ", a, b);
-for (i = 0; i < 50;i++)
+for (i = 0; i < 47;i++)
 {
 printf ("%d, ", sum);
 temp =sum;
 sum = temp + b;
 b = temp;
 }
+printf ("%d\n", sum);
 return (0);
 }
