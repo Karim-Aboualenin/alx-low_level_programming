@@ -10,7 +10,7 @@ int a = 1;
 int b = 2;
 int temp;
 int sum = a + b;
-int sum_even;
+int sum_even = 0;
 while (sum < 4000000)
 {
 temp = sum;
