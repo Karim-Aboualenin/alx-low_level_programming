@@ -6,33 +6,37 @@
  */
 int main(void)
 {
-unsigned long a = 1, a_start, a_end;
-unsigned long b = 2, b_start, b_end;
-int i;
-unsigned long sum, sum_start, sum_end;
-unsigned long carry;
-printf("%li, %li", a, b);
-for (i = 0; i < 89; i++)
-{
-sum = a + b;
-a = b;
-b = sum;
-printf(", %li", sum);
-}
-a_start = a / 100000000000;
-a_end = a % 100000000000;
-b_start = b / 100000000000;
-b_end = b % 100000000000;
-for (i = 0; i < 7; i++)
-{
-carry = (a_end + b_end) / 100000000000;
-sum_end = (a_end + b_end) -carry * 10000000000;
-sum_start = (a_start + b_start) +carry;
-printf(", %li%li", sum_start, sum_end);
-a_start = b_start;
-a_end = b_end;
-b_start = sum_start;
-b_end = sum_end;
-}
-return (0);
+	int counter, overflow;
+	unsigned long a = 1;
+	unsigned long b = 1;
+	unsigned long sum = 0;
+	long a_head, a_tail, b_head, b_tail, sum_head, sum_tail;
+
+	printf("1");
+
+	for (counter = 2; counter < 93; counter++) /* will still print */
+	{
+		sum = a + b;
+		a = b;
+		b = sum;
+		printf(", %lu", sum);
+	}
+
+	a_head = a / 1000000000; /* break larger num into 2 parts */
+	a_tail = a % 1000000000;
+	b_head = b / 1000000000;
+	b_tail = b % 1000000000;
+
+	for (; counter < 99; counter++)
+	{
+		overflow = (a_tail + b_tail) / 1000000000;
+		sum_tail = (a_tail + b_tail) - (1000000000 * overflow);
+		sum_head = (a_head + b_head) + overflow;
+
+		printf(", %lu%lu", sum_head, sum_tail);
+
+		a_head = b_head;
+		a_tail = b_tail;
+		b_head = sum_head;
+		b_tail = sum_tail;
 }
