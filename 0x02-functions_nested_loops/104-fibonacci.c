@@ -12,7 +12,7 @@ unsigned long temp;
 int i;
 unsigned long sum = a + b;
 printf("%d, %li, ", a, b);
-for (i = 0; i < 97; i++)
+for (i = 0; i < 90; i++)
 {
 printf("%li, ", sum);
 temp = sum;
