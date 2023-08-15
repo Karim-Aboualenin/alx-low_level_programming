@@ -11,14 +11,14 @@ long b = 2;
 long temp;
 int i;
 long sum = a + b;
-printf("%d, %d, ", a, b);
+printf("%d, %li, ", a, b);
 for (i = 0; i < 47;i++)
 {
-printf ("%d, ", sum);
+printf ("%li, ", sum);
 temp =sum;
 sum = temp + b;
 b = temp;
 }
-printf ("%d\n", sum);
+printf ("%li\n", sum);
 return (0);
 }
