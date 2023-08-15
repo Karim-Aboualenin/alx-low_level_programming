@@ -19,6 +19,6 @@ b = temp;
 if (sum % 2 == 0)
 sum_even += sum;
 }
-printf("%d\n", sum_even);
+printf("%d\n", sum_even + 2);
 return (0);
 }
