@@ -1,9 +1,11 @@
 #include <stdio.h>
 
 /**
- * main - entry point to the program
+ * main - print first 98 Fibonacci numbers without using long long, malloc,
+ * pointers, array/tables, or structures
  * Return: 0
  */
+
 int main(void)
 {
 	int counter, overflow;
@@ -40,4 +42,9 @@ int main(void)
 		b_head = sum_head;
 		b_tail = sum_tail;
 	}
+
+
+	printf("\n");
+
+	return (0);
 }
