@@ -7,18 +7,18 @@
 int main(void)
 {
 int a = 1;
-long b = 2;
-long temp;
-int i;
-long sum = a + b;
-printf("%d, %li, ", a, b);
-for (i = 0; i < 47; i++)
+int b = 2;
+int temp;
+int sum = a + b;
+int sum_even = 0;
+while (sum < 4000000)
 {
-printf("%li, ", sum);
 temp = sum;
 sum = temp + b;
 b = temp;
+if (sum % 2 == 0)
+sum_even += sum;
 }
-printf("%li\n", sum);
+printf("%d\n", sum_even + 2);
 return (0);
 }
