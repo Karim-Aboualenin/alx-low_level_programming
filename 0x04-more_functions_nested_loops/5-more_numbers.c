@@ -14,6 +14,7 @@ for (i = 0; i <= 14; i++)
 {
 _putchar('0' + c / 10);
 _putchar('0' + c % 10);
+c++;
 }
 _putchar('\n');
 c = 0;
