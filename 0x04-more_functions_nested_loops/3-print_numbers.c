@@ -4,7 +4,7 @@
  *print_numbers - print 0 to 9, followed by new line
  * Return: nothing
  */
-void print_alphabet(void)
+void print_numbers(void)
 {
 int c = '0';
 int i;
