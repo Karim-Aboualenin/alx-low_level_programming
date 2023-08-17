@@ -5,7 +5,7 @@
  * @n: the length of the line
  * Return: nothing
  */
-void print_line(int n)
+void print_diagonal(int n)
 {
 int i;
 
