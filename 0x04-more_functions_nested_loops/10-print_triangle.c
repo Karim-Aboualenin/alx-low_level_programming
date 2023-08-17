@@ -5,7 +5,7 @@
  * @n: the size of tiangle
  * Return: nothing
  */
-void print_diagonal(int n)
+void print_triangle(int n)
 {
 int i, j, k;
 
