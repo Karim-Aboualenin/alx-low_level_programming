@@ -19,6 +19,6 @@ i = 2;
 }
 i++;
 }
-printf("%li", num);
+printf("%li\n", num);
 return (0);
 }
