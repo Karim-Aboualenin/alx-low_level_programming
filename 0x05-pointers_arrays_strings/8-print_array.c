@@ -14,6 +14,7 @@ for (i = 0; i < n; i++)
 {
 if (i == 0)
 printf("%d", *a);
+else
 printf(", %d", *a);
 a++;
 }
