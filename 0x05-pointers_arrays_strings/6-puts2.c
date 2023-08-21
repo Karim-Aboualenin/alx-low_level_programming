@@ -6,8 +6,10 @@
 */
 void puts2(char *str)
 {
+i++;
 while (*str != '\0')
 {
+if(i++ % 2 == 0)
 _putchar(*str);
 str += 2;
 }
