@@ -20,7 +20,7 @@ for (i = 0; i < len; i++)
 {
 s--;
 }
-for (j = 0; i < len / 2; i++)
+for (j = 0; j < len / 2; j++)
 {
 temp = *s;
 *s = *(s + len -j -1);
