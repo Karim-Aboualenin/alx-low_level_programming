@@ -11,7 +11,7 @@ while (*str != '\0')
 {
 if(i++ % 2 == 0)
 _putchar(*str);
-str += 2;
+str++;
 }
 _putchar('\n');
 }
