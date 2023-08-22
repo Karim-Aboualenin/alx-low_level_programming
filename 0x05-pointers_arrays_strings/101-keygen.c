@@ -14,14 +14,14 @@ int i, sum = 0, n;
 srand (time(NULL));
 for (i = 0; i < 64; i++)
 {
-pass[i] = rand() % 126;
-sum += pass[i];
-putchar(pass[i]);
+pass[i] = rand() % 78;
+sum += pass[i] + '0';
+putchar(pass[i] + '0');
 if ((2772 - sum)  < 126)
 {
-n = 2772 - sum;
+n = 2772 - sum - '0';
 sum += n;
-putchar(n);
+putchar(n + '0');
 break;
 }
 }
