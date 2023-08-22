@@ -11,7 +11,7 @@ int main(void)
 int pass[64];
 int i, sum = 0, n;
 
-srand (time(null));
+srand (time(NULL));
 for (i = 0; i < 64; i++)
 {
 pass[i] = rand() % 126;
