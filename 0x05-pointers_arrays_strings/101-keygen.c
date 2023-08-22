@@ -22,7 +22,6 @@ if ((2772 - sum)  < 126)
 n = 2772 - sum;
 sum += n;
 putchar(n);
-putchar('\0');
 break;
 }
 }
