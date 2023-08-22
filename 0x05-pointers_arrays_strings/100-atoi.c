@@ -57,8 +57,8 @@ for (k = 0; k < num_of_digits; k++)
 {
 to_int = s[start] - '0';
 num += to_int *ten;
-ten /=10;
+ten /= 10;
 start++;
 }
-return (num * sign);
+return (num *sign);
 }
