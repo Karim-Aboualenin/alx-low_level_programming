@@ -25,7 +25,8 @@ int _atoi(char *s)
 int start = 0, len, i = 0, neg = 0, temp = 0, j = 0, k = 0;
 int sign = 1, ten = 1, num_of_digits = 0, num = 0;
 int l = 0, no_digit = 1, to_int = 0;
-len = _strlen(s);
+
+len = _strlen (s);
 for(j = 0;j <= len; j++)
 {
 if (s[j] >= '0' && s[j] <= '9')
