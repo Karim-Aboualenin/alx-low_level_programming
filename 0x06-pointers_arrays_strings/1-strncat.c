@@ -29,7 +29,7 @@ int len_dest;
 int i, j = 0;
 
 len_dest = _strlen(dest);
-for (i = len_dest; i <= n + len_dest; i++)
+for (i = len_dest; i < n + len_dest; i++)
 {
 dest[i] = src[j];
 if (src[j] == '\0')
