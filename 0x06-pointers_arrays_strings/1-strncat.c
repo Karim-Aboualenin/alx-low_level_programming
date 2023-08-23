@@ -29,7 +29,6 @@ int len_dest;
 int i, j = 0;
 
 len_dest = _strlen(dest);
-len_src = _strlen(src);
 for (i = len_dest; i <= n + len_dest; i++)
 {
 dest[i] = src[j];
