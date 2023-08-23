@@ -25,7 +25,7 @@ return (len);
  */
 char *_strncat(char *dest, char *src, int n)
 {
-int len_dest, len_src;
+int len_dest;
 int i, j = 0;
 
 len_dest = _strlen(dest);
