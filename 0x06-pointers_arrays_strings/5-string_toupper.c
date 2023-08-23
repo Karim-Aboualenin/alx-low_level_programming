@@ -17,7 +17,8 @@ return (len);
 }
 
 /**
- * string_toupper - a function that changes all lowercase letters of a string to uppercase
+ * string_toupper - a function that changes all lowercase letters of a string
+ * to uppercase
  * @s: string
  * Return: a pointer to destination
  */
@@ -28,7 +29,7 @@ int i, len;
 len = _strlen(s);
 for (i = 0; i < len; i++)
 {
-if(s[i] >= 'a' && s[i] <='z')
+if (s[i] >= 'a' && s[i] <= 'z')
 s[i] = s[i] - 32;
 }
 return (s);
