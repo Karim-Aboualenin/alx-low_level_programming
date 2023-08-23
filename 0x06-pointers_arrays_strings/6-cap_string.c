@@ -28,7 +28,7 @@ int i, len;
 len = _strlen(s);
 
 if (s[0]  >= 'a' && s[0] <= 'z')
-s[0] = s[0] - 32
+s[0] = s[0] - 32;
 for (i = 1; i < len; i++)
 {
 if ((s[i] == ',' || s[i] == ';' || s[i] == '.'
