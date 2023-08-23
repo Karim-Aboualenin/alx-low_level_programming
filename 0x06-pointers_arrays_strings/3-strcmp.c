@@ -21,7 +21,7 @@ return (len);
  * @s1: the first string
  * @s2: the second string
  * Return: 0 if equal, greater than 0 if the first non-matching
- * character in s1 is greater (in ASCII) than that of s2 and 
+ * character in s1 is greater (in ASCII) than that of s2 and
  * smaller than 0 if the first non-matching character in s1
  * is lower (in ASCII) than that of s2
 */
@@ -37,7 +37,7 @@ for (i = 0; i < len1; i++)
 {
 if (s1[i] == s2[i])
 {}
-else 
+else
 return ((int)s1[i] - (int)s2[i]);
 }
 return (0);
@@ -48,7 +48,7 @@ for (i = 0; i < len2; i++)
 {
 if (s1[i] == s2[i])
 {}
-else 
+else
 return ((int)s1[i] - (int)s2[i]);
 }
 return ((int)s1[i]);
@@ -59,9 +59,9 @@ for (i = 0; i < len1; i++)
 {
 if (s1[i] == s2[i])
 {}
-else 
+else
 return ((int)s1[i] - (int)s2[i]);
 }
-return (-1 *(int)s2[i]);
+return (-1 * (int)s2[i]);
 }
 }
