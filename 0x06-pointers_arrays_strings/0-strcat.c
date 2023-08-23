@@ -29,7 +29,7 @@ int i, j = 0;
 
 len_dest = _strlen(dest);
 len_src = _strlen(src);
-for (i = len_dest; i <= len_src + len_dest; i++)
+for (i = len_dest; i < len_src + len_dest; i++)
 {
 dest[i] = src[j++];
 }
