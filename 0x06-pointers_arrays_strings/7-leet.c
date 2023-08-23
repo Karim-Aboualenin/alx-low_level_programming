@@ -25,8 +25,8 @@ char *leet(char *s)
 {
 int i, j, len;
 len = _strlen(s);
-char a[10] = "aAeEoOtTlL";
-char b[10] = "4433007711";
+char a[] = "aAeEoOtTlL";
+char b[] = "4433007711";
 
 for (i = 0; i < len; i++)
 {
