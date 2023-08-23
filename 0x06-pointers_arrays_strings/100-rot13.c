@@ -5,7 +5,7 @@
  * @s: the string
  * Return: a pointer to the string
 */
-char *rot13(char *)
+char *rot13(char *s)
 {
 int i, j;
 char a[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
