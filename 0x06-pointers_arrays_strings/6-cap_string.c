@@ -17,7 +17,7 @@ return (len);
 }
 
 /**
- * cap_string - a function that capitalizes all words of 
+ * cap_string - a function that capitalizes all words of
  * a string.
  * @s: string
  * Return: a pointer to destination
@@ -29,11 +29,11 @@ len = _strlen(s);
 for (i = 0; i < len; i++)
 {
 if ((s[i] == ',' || s[i] == ';' || s[i] == '.'
-|| s[i] == '!' || s[i] == '?' || s[i] == '"' 
-|| s[i] == '(' || s[i] == ')'|| s[i] == '{' 
+|| s[i] == '!' || s[i] == '?' || s[i] == '"'
+|| s[i] == '(' || s[i] == ')' || s[i] == '{'
 || s[i] == '}' || s[i] == ' '
 || s[i] == '\n' || s[i] == '\t')
 && (s[i + 1] >= 'a' && s[i + 1] <= 'z'))
-s[i+1] = s[i+1] - 32;
+s[i + 1] = s[i + 1] - 32;
 }
 return (s);
