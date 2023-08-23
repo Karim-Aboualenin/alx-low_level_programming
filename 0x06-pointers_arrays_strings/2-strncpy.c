@@ -14,8 +14,6 @@ int i;
 for (i = 0; i < n; i++)
 {
 dest[i] = src[i];
-if (src[i] == "/0")
-break;
 }
 return (dest);
 }
