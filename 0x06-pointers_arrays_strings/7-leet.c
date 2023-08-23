@@ -24,10 +24,10 @@ return (len);
 char *leet(char *s)
 {
 int i, j, len;
-len = _strlen(s);
 char a[] = {'a', 'A', 'e', 'E', 'o', 'O', 't', 'T', 'l', 'L'};
 char b[] = {'4', '4', '3', '3', '0', '0', '7', '7', '1', '1'};
 
+len = _strlen(s);
 for (i = 0; i < len; i++)
 {
 for (j = 0; j < 10; j++)
