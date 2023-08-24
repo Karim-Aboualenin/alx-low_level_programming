@@ -57,6 +57,5 @@ a[k] = a[j];
 a[j] = temp;
 j--;
 }
-}
 return (r);
 }
