@@ -39,7 +39,7 @@ longer = len2;
 
 if(longer > size_r)
 return (0);
-while (--len1 >= 0 || --len2 >= 0 || carry > 0)
+while (--len1 >= 0 || --len2 >= 0 || carry != 0)
 {
 if (len1 >= 0)
 sum = sum + n1[len1] - '0';
