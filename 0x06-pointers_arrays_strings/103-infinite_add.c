@@ -49,7 +49,7 @@ sum = sum + carry;
 carry = sum / 10;
 r[i++] = sum % 10 + '0';
 }
-j = i - 1
+j = i - 1;
 for (k = 0; k < n / 2; k++)
 {
 temp = a[k];
