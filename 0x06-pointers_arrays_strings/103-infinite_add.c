@@ -50,6 +50,7 @@ sum = sum + carry;
 carry = sum / 10;
 r[i++] = sum % 10 + '0';
 }
+r[i] = '\0';
 j = i - 1;
 for (k = 0; k < i / 2; k++)
 {
