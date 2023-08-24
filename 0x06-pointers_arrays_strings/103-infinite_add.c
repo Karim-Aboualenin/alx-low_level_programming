@@ -27,9 +27,9 @@ return (len);
 
 char *infinite_add(char *n1, char *n2, char *r, int size_r)
 {
-int i = 0, len1, len2, longer, sum , carry = 0;
+int i = 0, len1, len2, longer, sum, carry = 0;
 int k = 0, j = 0, temp;
-  
+
 len1 = _strlen(n1);
 len2 = _strlen(n2);
 if (len1 >= len2)
@@ -37,7 +37,7 @@ longer = len1;
 else
 longer = len2;
 
-if(longer > size_r)
+if (longer > size_r)
 return (0);
 while (--len1 >= 0 || --len2 >= 0 || carry != 0)
 {
