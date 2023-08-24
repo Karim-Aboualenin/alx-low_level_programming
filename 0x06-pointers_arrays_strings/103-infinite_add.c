@@ -52,9 +52,9 @@ r[i++] = sum % 10 + '0';
 j = i - 1;
 for (k = 0; k < n / 2; k++)
 {
-temp = a[k];
-a[k] = a[j];
-a[j] = temp;
+temp = r[k];
+r[k] = r[j];
+r[j] = temp;
 j--;
 }
 return (r);
