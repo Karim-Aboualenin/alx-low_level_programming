@@ -21,7 +21,7 @@ for (; j < temp + 10; j = j + 2)
 if (j + 1 < size)
 printf(" %.2x%.2x", b[j], b[j + 1]);
 else if (j < size)
-printf(" %.2x  ", b[j], b[j + 1]);
+printf(" %.2x  ", b[j]);
 else
 printf("     ");
 }
