@@ -29,10 +29,13 @@ printf(" ");
 temp_2 = k;
 for (; k < temp_2 + 10; k++)
 {
+if (k < size)
+{
 if (b[k] >= 32)
 printf("%c", b[k]);
 else
 printf(".");
+}
 }
 printf("\n");
 }
