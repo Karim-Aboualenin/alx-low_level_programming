@@ -50,7 +50,7 @@ carry = sum / 10;
 r[i++] = sum % 10 + '0';
 }
 j = i - 1;
-for (k = 0; k < n / 2; k++)
+for (k = 0; k < i / 2; k++)
 {
 temp = r[k];
 r[k] = r[j];
