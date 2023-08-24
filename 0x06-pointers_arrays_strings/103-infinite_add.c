@@ -37,7 +37,7 @@ longer = len1;
 else
 longer = len2;
 
-if (longer +1 >= size_r)
+if (longer + 1 >= size_r)
 {
 return (0);
 }
