@@ -7,31 +7,18 @@
  */
 void print_number(int n)
 {
-if (n == -2147483648)
-{
-_putchar('-');
-_putchar('2');
-_putchar('1');
-_putchar('4');
-_putchar('7');
-_putchar('4');
-_putchar('8');
-_putchar('3');
-_putchar('6');
-_putchar('4');
-_putchar('8');
-}
-else if (n == 0)
+unsigned int num =n;
+if (num == 0)
 _putchar('0');
 else
 {
-if (n < 0)
+if (num < 0)
 {
 _putchar('-');
-n = -n;
+num = -num;
 }
-if (n  / 10)
-print_number(n / 10);
-_putchar('0' + n % 10);
+if (num  / 10)
+print_number(num / 10);
+_putchar('0' + num % 10);
 }
 }
