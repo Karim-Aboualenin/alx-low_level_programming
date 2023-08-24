@@ -37,15 +37,19 @@ longer = len1;
 else
 longer = len2;
 
-if (longer > size_r)
+if (longer +1 >= size_r)
+{
 return (0);
-while (--len1 >= 0 || --len2 >= 0 || carry != 0)
+}
+len1--;
+len2--;
+while (len1 >= 0 || len2 >= 0 || carry != 0)
 {
 sum = 0;
 if (len1 >= 0)
-sum = sum + n1[len1] - '0';
+sum = sum + n1[len1--] - '0';
 if (len2 >= 0)
-sum = sum + n2[len2] - '0';
+sum = sum + n2[len2--] - '0';
 sum = sum + carry;
 carry = sum / 10;
 r[i++] = sum % 10 + '0';
