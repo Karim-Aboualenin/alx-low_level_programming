@@ -17,25 +17,6 @@ return (len);
 }
 
 /**
- * reverse_array - a function that reverses the content of an array of integers
- * @a: the array
- * @n: the number of elements of the array
- * Return: nothing
-*/
-void reverse_array(char *a, int n)
-{
-int i = 0, j = n - 1, temp;
-
-for (i = 0; i < n / 2; i++)
-{
-temp = a[i];
-a[i] = a[j];
-a[j] = temp;
-j--;
-}
-}
-
-/**
  * infinite_add -  a function that adds two numbers
  * @n1: the first number
  * @n2: the second number
@@ -47,7 +28,8 @@ j--;
 char *infinite_add(char *n1, char *n2, char *r, int size_r)
 {
 int i = 0, len1, len2, longer, sum = 0, carry = 0;
-
+int k = 0, j = 0, temp;
+  
 len1 = _strlen(n1);
 len2 = _strlen(n2);
 if (len1 >= len2)
@@ -67,6 +49,14 @@ sum = sum + carry;
 carry = sum / 10;
 r[i++] = sum % 10 + '0';
 }
-reverse_array(r, i);
+j = i - 1
+for (k = 0; k < n / 2; k++)
+{
+temp = a[k];
+a[k] = a[j];
+a[j] = temp;
+j--;
+}
+}
 return (r);
 }
