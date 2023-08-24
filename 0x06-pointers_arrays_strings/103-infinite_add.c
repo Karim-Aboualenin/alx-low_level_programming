@@ -67,7 +67,6 @@ sum = sum + carry;
 carry = sum / 10;
 r[i++] = sum % 10 + '0';
 }
-//r[i] = '\0';
 reverse_array(r, i);
 return (r);
 }
