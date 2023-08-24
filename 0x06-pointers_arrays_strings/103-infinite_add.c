@@ -27,6 +27,7 @@ return (len);
 
 char *infinite_add(char *n1, char *n2, char *r, int size_r)
 {
+sum = 0;
 int i = 0, len1, len2, longer, sum = 0, carry = 0;
 int k = 0, j = 0, temp;
   
