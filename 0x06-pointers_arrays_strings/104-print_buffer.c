@@ -16,7 +16,7 @@ if (size <= 0)
 printf("\n");
 else
 {
-for (i = 0; i <= size; i = i + 10)
+for (i = 0; i < size; i = i + 10)
 {
 printf("%.8x:", address + l++ * 0x0a);
 temp = j;
