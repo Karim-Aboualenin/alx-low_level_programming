@@ -9,7 +9,7 @@
 
 void set_string(char **s, char *to)
 {
- int i = 0, j;
+ int i = 0;
 
 for (i = 0; to[i] != '\0'; i++)
 {
