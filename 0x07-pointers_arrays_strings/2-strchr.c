@@ -16,7 +16,7 @@ int found = 0;
 
 while (s[i] != '\0')
 {
-if (s[i] = c)
+if (s[i] == c)
 {
 ptr[0] = s[i];
 found = 1;
