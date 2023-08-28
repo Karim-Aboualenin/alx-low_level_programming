@@ -9,6 +9,7 @@
  */
 
 char *_strchr(char *s, char c)
+{
 unsigned int i = 0;
 char *ptr = NULL;
 int found = 0;
