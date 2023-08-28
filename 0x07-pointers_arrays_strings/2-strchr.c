@@ -9,16 +9,14 @@
  */
 
 char *_strchr(char *s, char c)
-{
 unsigned int i = 0;
 char *ptr = NULL;
 int found = 0;
-
 while (s[i] != '\0')
 {
 if (s[i] == c)
 {
-ptr[0] = s[i];
+ptr = s + i;
 found = 1;
 break;
 }
