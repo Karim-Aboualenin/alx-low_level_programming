@@ -19,7 +19,7 @@ s++;
 }
 if (*s == '\0' && c != '\0')
 {
-return (NULL);
+return (0);
 }
 else
 {
