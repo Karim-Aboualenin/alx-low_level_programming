@@ -11,7 +11,7 @@
 char *_strchr(char *s, char c)
 {
 unsigned int i = 0;
-char *ptr;
+char *ptr NULL;
 int found = 0;
 
 while (s[i] != '\0')
@@ -24,7 +24,7 @@ break;
 }
 i++;
 }
-if (found = 0)
+if (found == 0)
 ptr = NULL;
 return (ptr);
 }
