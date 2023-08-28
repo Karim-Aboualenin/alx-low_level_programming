@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stddef.h>
 /**
  * _strchr - Write a function that locates a character in a string.
  * @s: the string
@@ -23,6 +22,6 @@ break;
 i++;
 }
 if (found == 0)
-s = NULL;
+s = 0;
 return (s);
 }
