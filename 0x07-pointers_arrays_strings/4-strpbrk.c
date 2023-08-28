@@ -13,7 +13,6 @@ int i = 0;
 int found = 0;
 while (*s != '\0')
 {
-//printf("%d",i);
 i = 0;
 while (accept[i] != '\0')
 {
@@ -30,7 +29,7 @@ break;
 }
 s++;
 }
-if (*s == '\0' && accept == '\0')
+if (*s == '\0' && accept[i] == '\0')
 {
 return (0);
 }
