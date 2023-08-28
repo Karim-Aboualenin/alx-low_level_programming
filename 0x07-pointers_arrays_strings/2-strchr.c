@@ -15,7 +15,6 @@ while (s[i] != '\0')
 {
 if (s[i] == c)
 {
-s = s + i;
 found = 1;
 break;
 }
@@ -23,5 +22,7 @@ i++;
 }
 if (found == 0)
 s = 0;
+else 
+s = s + i;
 return (s);
 }
