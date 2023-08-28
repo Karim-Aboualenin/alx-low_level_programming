@@ -13,7 +13,7 @@ int i = 0;
 int found = 0;
 while (*s != '\0')
 {
-for(i=0;accept[i] != '\0';i++)
+for(i = 0; accept[i] != '\0'; i++)
 {
 if (s[0] == accept[i])
 {
