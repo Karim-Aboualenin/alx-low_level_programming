@@ -12,7 +12,7 @@ unsigned int _strspn(char *s, char *accept)
 {
 unsigned int num = 0;
 int i;
-found = 0;
+int found = 0;
 while (*s != '\0')
 {
 i = 0;
@@ -25,7 +25,10 @@ num++;
 found = 1;
 }
 }
-if(found = 0)
+if(found == 0)
 break;
+s++;
 }
+
+return (num);
 }
