@@ -7,7 +7,7 @@
  * Return: pointer to string
  */
 
-char *_strpbrk(char *s, char *accept)
+char *_strstr(char *haystack, char *needle)
 {
 int i = 0;
 int found = 0;
