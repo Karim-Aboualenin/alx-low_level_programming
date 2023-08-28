@@ -4,7 +4,7 @@
  * @s: the string
  * @accept: the accepted bytes
  *
- * Returns the number of bytes in the initial segment
+ * Returns: the number of bytes in the initial segment
  * of s which consist only of bytes from accept
  */
 
