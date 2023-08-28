@@ -1,8 +1,8 @@
 #include "main.h"
 /**
- * _strpbrk - a function that searches a string for any of a set of bytes.
- * @s: the string
- * @accept: the set of bytes
+ * _strstr - Write a function that locates a substring.
+ * @haystack: the string
+ * @needle: the substring
  *
  * Return: pointer to string
  */
@@ -10,7 +10,7 @@
 char *_strstr(char *haystack, char *needle)
 {
 int i = 0, j, k;
-for(i = 0; haystack[i] != '\0'; i++)
+for (i = 0; haystack[i] != '\0'; i++)
 {
 if (haystack[i] == needle[0])
 {
