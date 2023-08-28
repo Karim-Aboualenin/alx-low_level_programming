@@ -9,24 +9,17 @@
  */
 void print_diagsums(int *a, int size)
 {
-int i, j, sum = 0;
-for (i = 0; i < size i++)
+int i, sum = 0;
+for (i = 0; i < size * size; i = i + size + 1)
 {
-for j = 0; j < size ;j++)
-{
-if (i == j)
-sum += a[i][j];
+//printf("%d\n",i);
+sum += a[i];
 }
-}
-printf("%d, ",sum);
+printf("%d, ", sum);
 sum = 0;
-for (i = 0; i < size i++)
+for (i = size - 1; i < size * size - 1; i = i + size - 1)
 {
-for j = 0; j < size ;j++)
-{
-if (i + j == size - 1)
-sum += a[i][j];
-}
+sum += a[i];
 }
 printf("%d\n",sum);
 }
