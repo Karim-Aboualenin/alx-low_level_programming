@@ -20,5 +20,5 @@ for (i = size - 1; i < size * size - 1; i = i + size - 1)
 {
 sum += a[i];
 }
-printf("%d\n",sum);
+printf("%d\n", sum);
 }
