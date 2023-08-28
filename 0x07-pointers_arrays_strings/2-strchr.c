@@ -9,20 +9,20 @@
 
 char *_strchr(char *s, char c)
 {
-unsigned int i = 0;
-int found = 0;
-while (s[i] != '\0')
+while (*s != '\0')
 {
-if (s[i] == c)
+if (*s == c)
 {
-found = 1;
 break;
 }
-i++;
+s++;
 }
-if (found == 0)
-s = 0;
-else 
-s = s + i;
+if (*s == '\0' && c != '\0')
+{
+return (NULL);
+}
+else
+{
 return (s);
+}
 }
