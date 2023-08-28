@@ -13,15 +13,13 @@ int i = 0;
 int found = 0;
 while (*s != '\0')
 {
-i = 0;
-while (accept[i] != '\0')
+for(i=0;accept[i] != '\0';i++)
 {
-if (*s == accept[i])
+if (s[0] == accept[i])
 {
 found = 1;
 break;
 }
-i++;
 }
 if (found == 1)
 {
