@@ -19,6 +19,7 @@ return (1 + _strlen_recursion(s));
 /**
  * check_palindrome - a function that returns 1 if a
  * string is a palindrome and 0 if not
+ * @s: the string
  * @start: the start of string
  * @end: the end of string
  * Return: 1 if a string is a palindrome and 0 if not
