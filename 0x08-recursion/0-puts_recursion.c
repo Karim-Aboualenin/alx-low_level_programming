@@ -4,7 +4,7 @@
  * @s: the string
  * Return: nothing
 */
-void _puts_recursion(char *s);
+void _puts_recursion(char *s)
 {
 while (*str != '\0')
 {
