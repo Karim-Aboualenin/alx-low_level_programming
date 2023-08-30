@@ -26,6 +26,5 @@ if (r * r > n)
 return (-1);
 if (r * r == n)
 return (r);
-if (r * r < n)
 return (find_root(n, r + 1));
 }
