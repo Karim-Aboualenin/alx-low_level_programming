@@ -10,7 +10,7 @@
  */
 int coin_counter(int x)
 {
-int coin 0;
+int coin = 0;
 while (x >= 25)
 {
 if (x / 25 >= 1)
