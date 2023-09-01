@@ -24,14 +24,15 @@ printf("0\n");
 return (0);
 }
 coin = coin_counter(x);
-printf("%d\n",coin);
-return(0);
+printf("%d\n", coin);
+return (0);
 }
 
 /**
- * coin-counter - count the coins
+ * coin_counter -  a function that returnss the minimum
+ * number of coins to make change for an amount of money.
  * @x: the money
- * Return: the minimum number of coins to make change 
+ * Return: the minimum number of coins to make change
  * for an amount of money.
  */
 int coin_counter(int x)
