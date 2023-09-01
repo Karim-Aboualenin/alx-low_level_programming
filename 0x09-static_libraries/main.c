@@ -8,6 +8,6 @@
 
 int main(void)
 {
-  _puts("hahaha!")
+  _puts("hahaha!");
   return(0);
 }
