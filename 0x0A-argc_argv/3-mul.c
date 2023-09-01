@@ -17,7 +17,7 @@ printf("Error");
 else
 {
 mul = atoi(argv[1]) * atoi(argv[2]);
-printf("%d\n",mul);
+printf("%d\n", mul);
 }
 return (0);
 }
