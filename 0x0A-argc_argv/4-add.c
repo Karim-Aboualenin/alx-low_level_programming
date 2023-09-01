@@ -20,7 +20,7 @@ else
 {
 for (i = 0; i < argc - 1; i++)
 {
-if (argv[1][0] >= '0' && argv[1][0] <= '9')
+if (argv[k][0] >= '0' && argv[k][0] <= '9')
 sum += atoi(argv[k++]);
 else
 {
