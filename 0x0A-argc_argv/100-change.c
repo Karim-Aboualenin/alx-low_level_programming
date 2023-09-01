@@ -46,7 +46,7 @@ if (x / 1 >= 1)
 coin++;
 x -= 1;
 }}
-return (coin)
+return (coin);
 }
 
 /**
