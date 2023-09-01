@@ -8,5 +8,6 @@
 
 int main(void)
 {
+  _puts("hahaha!")
   return(0);
 }
