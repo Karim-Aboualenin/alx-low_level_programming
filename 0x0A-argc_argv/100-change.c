@@ -3,6 +3,32 @@
 #include <stdlib.h>
 
 /**
+ * main - check the code
+ * @argc: the counter for arguments
+ * @argv: an array of strings for arguments
+ * Return: Always 0.
+ */
+
+int main(int argc, char *argv[])
+{
+int x, coin;
+if (argc != 2)
+{
+printf("Error\n");
+return (1);
+}
+x = atoi(argv[1]);
+if (x <= 0)
+{
+printf("0\n");
+return (0);
+}
+coin = coin_counter(x);
+printf("%d\n",coin);
+return(0);
+}
+
+/**
  * coin-counter - count the coins
  * @x: the money
  * Return: the minimum number of coins to make change 
@@ -47,30 +73,4 @@ coin++;
 x -= 1;
 }}
 return (coin);
-}
-
-/**
- * main - check the code
- * @argc: the counter for arguments
- * @argv: an array of strings for arguments
- * Return: Always 0.
- */
-
-int main(int argc, char *argv[])
-{
-int x, coin;
-if (argc != 2)
-{
-printf("Error\n");
-return (1);
-}
-x = atoi(argv[1]);
-if (x <= 0)
-{
-printf("0\n");
-return (0);
-}
-coin = coin_counter(x);
-printf("%d\n",coin);
-return(0);
 }
