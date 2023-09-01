@@ -71,6 +71,6 @@ printf("0\n");
 return (0);
 }
 coin = coin_counter(x);
-printf("%d",coin);
+printf("%d\n",coin);
 return(0);
 }
