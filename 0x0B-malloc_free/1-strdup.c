@@ -33,7 +33,7 @@ int len;
 if (str == NULL)
 return (NULL);
 len = _strlen(str);
-s = malloc(len *sizeof(char));
+s = malloc(len *sizeof(char) + 1);
 if (s == NULL)
 return (NULL);
 while (str[i] != '\0')
