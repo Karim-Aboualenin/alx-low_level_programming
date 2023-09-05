@@ -6,7 +6,7 @@
  * it with a specific char.
  * @size: the size of the memory to print
  * @c: thespecific char.
- * Return: Nothing.
+ * Return: a pointer to the array, or NULL if it fails
  */
 char *create_array(unsigned int size, char c)
 {
