@@ -27,7 +27,7 @@ return (len);
 
 char *check_Null(char *s1, char *s2)
 {
-int len1 , len2, i;
+int len1, len2, i;
 char *s;
 if (s1 == NULL)
 s1 = "";
@@ -37,7 +37,7 @@ len1 = _strlen(s1);
 len2 = _strlen(s2);
 if (len2 == 0)
 {
-s = malloc((len1) * sizeof(char) + 1);
+s = malloc((len1) *sizeof(char) + 1);
 if (s == NULL)
 return (NULL);
 for (i = 0; i < len1; i++)
@@ -69,7 +69,7 @@ return (NULL);
  */
 char *str_concat(char *s1, char *s2)
 {
-int len1 , len2 , i = 0, j = 0, k = 0;
+int len1, len2, i = 0, j = 0, k = 0;
 char *s;
 s = check_Null(s1, s2);
 if (s == NULL)
