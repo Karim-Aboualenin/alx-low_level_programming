@@ -19,7 +19,7 @@ return (len);
 }
 
 /**
- * _str_concat - a function that concatenates two strings. 
+ * str_concat - a function that concatenates two strings.
  * @s1: the first sting
  * @s2: the second string
  * Return: pointer should point to
@@ -28,18 +28,40 @@ return (len);
  */
 char *str_concat(char *s1, char *s2)
 {
-int len1, len2, i = 0, j = 0, k = 0;
+int len1 = _strlen(s1), len2 = _strlen(s2), i = 0, j = 0, k = 0;
 char *s;
-len1 = _strlen(s1);
-len2 = _strlen(s2);
-s = malloc((len1 + len2) *sizeof(int) + 1); 
+if (len2 == 0)
+{
+s = malloc((len1) *sizeof(char) + 1);
+if (s == NULL)
+return (NULL)
 for (i = 0; i < len1; i++)
 {
 s[i] = s1[i];
 }
-for (j = i;j < len2 + i; j++)
+return (s);
+}
+if (len1 == 0)
+{
+s = malloc((len2) *sizeof(char) + 1);
+if (s == NULL)
+return (NULL)
+for (i = 0; i < len2; i++)
+{
+s[i] = s2[i];
+}
+return (s);
+}}
+s = malloc((len1 + len2) *sizeof(char) + 1);
+if (s == NULL)
+return (NULL)
+for (i = 0; i < len1; i++)
+{
+s[i] = s1[i];
+}
+for (j = i; j < len2 + i; j++)
 {
 s[j] = s2[k++];
 }
-return(s);
+return (s);
 }
