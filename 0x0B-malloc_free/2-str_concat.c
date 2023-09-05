@@ -34,7 +34,7 @@ if (len2 == 0)
 {
 s = malloc((len1) *sizeof(char) + 1);
 if (s == NULL)
-return (NULL)
+return (NULL);
 for (i = 0; i < len1; i++)
 {
 s[i] = s1[i];
@@ -45,7 +45,7 @@ if (len1 == 0)
 {
 s = malloc((len2) *sizeof(char) + 1);
 if (s == NULL)
-return (NULL)
+return (NULL);
 for (i = 0; i < len2; i++)
 {
 s[i] = s2[i];
