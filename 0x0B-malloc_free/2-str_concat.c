@@ -28,8 +28,9 @@ return (len);
  */
 char *str_concat(char *s1, char *s2)
 {
-int len1 = _strlen(s1), len2 = _strlen(s2), i = 0;
+int len1 = _strlen(s1), len2 = _strlen(s2), i = 0, k;
 char *s;
+k = 0;
 if (len2 == 0)
 {
 s = malloc((len1) *sizeof(char) + 1);
@@ -52,7 +53,6 @@ s[i] = s2[i];
 }
 return (s);
 }
-int k = 0;
 s = malloc((len1 + len2) *sizeof(char) + 1);
 if (s == NULL)
 return (NULL)
