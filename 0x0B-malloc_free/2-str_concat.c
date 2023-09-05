@@ -27,7 +27,7 @@ return (len);
 
 char *check_Null(char *s1, char *s2)
 {
-int len1 , len2;
+int len1 , len2, i;
 char *s;
 if (s1 == NULL)
 s1 = "";
