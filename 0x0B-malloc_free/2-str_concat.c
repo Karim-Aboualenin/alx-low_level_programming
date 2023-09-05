@@ -28,7 +28,7 @@ return (len);
  */
 char *str_concat(char *s1, char *s2)
 {
-int len1 = _strlen(s1), len2 = _strlen(s2), i = 0, j = 0, k = 0;
+int len1 = _strlen(s1), len2 = _strlen(s2), i = 0, k = 0;
 char *s;
 if (len2 == 0)
 {
@@ -59,7 +59,7 @@ for (i = 0; i < len1; i++)
 {
 s[i] = s1[i];
 }
-for (j = i; j < len2 + i; j++)
+for (int j = i; j < len2 + i; j++)
 {
 s[j] = s2[k++];
 }
