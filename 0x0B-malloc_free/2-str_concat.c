@@ -31,7 +31,7 @@ int len1 , len2;
 if (s1 == NULL)
 s1 = "";
 if (s2 == NULL)
-s2 = ""
+s2 = "";
 len1 = _strlen(s1);
 len2 = _strlen(s2);
 if (len2 == 0)
