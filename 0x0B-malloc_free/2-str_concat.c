@@ -55,7 +55,7 @@ return (s);
 }
 s = malloc((len1 + len2) *sizeof(char) + 1);
 if (s == NULL)
-return (NULL)
+return (NULL);
 for (i = 0; i < len1; i++)
 {
 s[i] = s1[i];
