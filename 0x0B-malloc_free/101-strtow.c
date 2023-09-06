@@ -1,6 +1,21 @@
-#include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
+
+/**
+ * _strlen - return the length of string
+ * @s: the string
+ * Return: the length of the string
+*/
+int _strlen(char *s)
+{
+int len = 0;
+while (*s != '\0')
+{
+len++;
+s++;
+}
+return (len);
+}
 
 /**
  * strtow - a function that splits a string into words.
@@ -12,8 +27,40 @@
 char **strtow(char *str)
 {
 char **s;
-*s = NULL;
-*s = str;
+int i = 0, counter = 0 , index = 0, j = 0, start, len, k = 0, l = 0;
+if (str == NULL || str == "")
+return NULL;
+while (str[i] != '\0'){
+if (str[i] != ' ' && str[i - 1] == ' ' || i == 0)
+counter++;
+i++;
+}
+s = malloc(sizeof(char *) * (counter + 1));
+if (s == NULL)
 return (NULL);
+while (str[j] != '\0')
+{
+if (str[j] != ' ' && (str[j - 1] == ' ' || j == 0))
+{
+start = j;
+len = 0;
+while (str[j] != ' ' && str[j] != '\0')
+{
+len ++;
+j++;
+}
+s[index] = malloc(len *sizeof(char*) + 1);
+if (s[index] == NULL){
+free(s);
+for (k = 0 ;k < index; k++)
+free (s[k]);
+return(NULL);
+}
+for (l = 0; l < len; len++)
+s[index][l] = str[start + l];
+s[index][l] = '\0';
+index++;
+j++;
+}}
 return (s);
 }
