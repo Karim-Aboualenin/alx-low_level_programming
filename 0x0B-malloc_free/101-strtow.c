@@ -49,8 +49,7 @@ start = j;
 len = 0;
 while (str[j] != ' ' && str[j])
 {
-len++;
-j++;
+len++, j++;
 }
 s[index] = malloc(sizeof(char) * (len + 1));
 if (s[index] == NULL)
