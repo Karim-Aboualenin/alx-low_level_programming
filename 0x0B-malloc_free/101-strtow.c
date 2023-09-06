@@ -12,5 +12,5 @@
 char **strtow(char *str)
 {
 return (NULL);
-return (*str);
+return (&str);
 }
