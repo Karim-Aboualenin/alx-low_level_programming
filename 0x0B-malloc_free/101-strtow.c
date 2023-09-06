@@ -30,7 +30,8 @@ char **s;
 int i = 0, counter = 0, index = 0, j = 0, start, len, k = 0, l = 0;
 if (str == NULL || str[0] == '\0')
 return (NULL);
-for (i = 0; str[i]; i++) {
+for (i = 0; str[i]; i++)
+{
 if (str[i] != ' ' && (str[i - 1] == ' ' || i == 0))
 counter++;
 }
@@ -52,7 +53,8 @@ len++;
 j++;
 }
 s[index] = malloc(sizeof(char) * (len + 1));
-if (s[index] == NULL) {
+if (s[index] == NULL)
+{
 for (k = 0 ; k < index; k++)
 free(s[k]);
 free(s);
