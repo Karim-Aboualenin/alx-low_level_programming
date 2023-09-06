@@ -11,6 +11,8 @@
 
 char **strtow(char *str)
 {
+char **s;
+*s = str;
 return (NULL);
-return (&str);
+return (s);
 }
