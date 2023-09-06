@@ -19,7 +19,7 @@ return (len);
 }
 
 /**
- * argstostr-  a function that concatenates all the arguments 
+ * argstostr-  a function that concatenates all the arguments
  * of your program.
  * @ac: argument counter
  * @av: arguent vector
@@ -36,8 +36,8 @@ for (i = 0; i < ac; i++)
 {
 len += _strlen(av[i]);
 }
-len += (ac + 1); 
-s = malloc(len * sizeof(char));
+len += (ac + 1);
+s = malloc(len *sizeof(char));
 if (s == NULL)
 {
 free(s);
