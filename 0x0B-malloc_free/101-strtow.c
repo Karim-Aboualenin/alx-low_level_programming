@@ -56,7 +56,7 @@ for (k = 0 ;k < index; k++)
 free (s[k]);
 return(NULL);
 }
-for (l = 0; l < len; len++)
+for (l = 0; l < len; l++)
 s[index][l] = str[start + l];
 s[index][l] = '\0';
 index++;
