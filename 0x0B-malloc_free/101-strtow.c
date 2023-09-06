@@ -12,6 +12,7 @@
 char **strtow(char *str)
 {
 char **s;
+*s = Null;
 *s = str;
 return (NULL);
 return (s);
