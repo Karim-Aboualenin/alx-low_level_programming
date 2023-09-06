@@ -27,10 +27,10 @@ return (len);
 char **strtow(char *str)
 {
 char **s;
-int i = 0, counter = 0 , index = 0, j = 0, start, len, k = 0, l = 0;
+int i = 0, counter = 0, index = 0, j = 0, start, len, k = 0, l = 0;
 if (str == NULL || str[0] == '\0')
-return NULL;
-for (i = 0; str[i]; i++){
+return (NULL);
+for (i = 0; str[i]; i++) {
 if (str[i] != ' ' && (str[i - 1] == ' ' || i == 0))
 counter++;
 }
@@ -48,15 +48,15 @@ start = j;
 len = 0;
 while (str[j] != ' ' && str[j])
 {
-len ++;
+len++;
 j++;
 }
 s[index] = malloc(sizeof(char) * (len + 1));
-if (s[index] == NULL){
-for (k = 0 ;k < index; k++)
-free (s[k]);
+if (s[index] == NULL) {
+for (k = 0 ; k < index; k++)
+free(s[k]);
 free(s);
-return(NULL);
+return (NULL);
 }
 for (l = 0; l < len; l++)
 s[index][l] = str[start + l];
