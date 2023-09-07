@@ -29,7 +29,7 @@ return (NULL);
 return (ptr);
 }
 s = malloc(new_size);
-if (new_ptr == NULL)
+if (s == NULL)
 return (NULL);
 for (i = 0; i < old_size && i < new_size; i++)
 s[i] = *((char *)(ptr) + i);
