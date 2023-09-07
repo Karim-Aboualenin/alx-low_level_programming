@@ -4,6 +4,7 @@
 
 /**
  * _realloc - a function that reallocates a memory block using malloc and free
+ * ptr: the allocated memory
  * @old_size: old size of the allocated memory
  * @new_size: new size of the allocated memory
  * Return: pointer to the allocated array
@@ -28,8 +29,8 @@ free(ptr);
 return (ptr);
 }
 s = ptr;
-free (ptr);
-ptr = malloc (new_size);
+free(ptr);
+ptr = malloc(new_size);
 if (ptr == NULL)
 return (NULL);
 if (old_size >= new_size)
@@ -37,6 +38,6 @@ size = new_size;
 else
 size = old_size;
 for (i = 0; i < size; i++)
-*((char *)(ptr) + i) = s[i];
+*((char *)(ptr) +i) = s[i];
 return (ptr);
 }
