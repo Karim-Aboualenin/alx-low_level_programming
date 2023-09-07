@@ -39,5 +39,6 @@ else
 size = old_size;
 for (i = 0; i < size; i++)
 *((char *)(ptr) +i) = s[i];
+free(s);
 return (ptr);
 }
