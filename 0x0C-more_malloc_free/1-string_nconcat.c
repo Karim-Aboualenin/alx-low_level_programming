@@ -68,7 +68,7 @@ return (NULL);
 }
 
 /**
- * str_nconcat - a function that concatenates two strings.
+ * string_nconcat - a function that concatenates two strings.
  * @s1: the first sting
  * @s2: the second string
  * @n: the first bytes of s2 to be concatenated
@@ -98,7 +98,7 @@ s[j] = s2[k++];
 }
 return (s);
 }
-s = malloc((len1 + n) *sizeof(char) + 1);
+s = malloc((len1 + n) * sizeof(char) + 1);
 if (s == NULL)
 return (NULL);
 for (i = 0; i < len1; i++)
