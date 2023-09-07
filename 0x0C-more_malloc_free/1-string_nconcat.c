@@ -32,19 +32,19 @@ return (len);
  * check_Null- handle null strings
  * @s1: the first string
  * @s2: the second string
+ 
  * Return: the pointer if it's null
 */
 
-char *check_Null(char *s1, char *s2)
+char *check_Null(char *s1, char *s2, unsigned n)
 {
-int len1, len2, i;
+unsigned int len1, len2, i;
 char *s;
 if (s1 == NULL)
 s1 = "";
 if (s2 == NULL)
 s2 = "";
-len1 = _strlen(s1);
-len2 = _strlen(s2);
+len1 = _strlen(s1), len2 = _strlen(s2);
 if (len2 == 0)
 {
 s = malloc((len1) *sizeof(char) + 1);
@@ -85,13 +85,14 @@ return (NULL);
  * str_concat - a function that concatenates two strings.
  * @s1: the first sting
  * @s2: the second string
+ * @n: the first n bytes of s2
  * Return: pointer should point to
  * a newly allocated space in memory which contains
- * the contents of s1, followed by the contents of s2, and null terminated
+ * the contents of s1,followed by the first n bytes of s2, and null terminated
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-int len1, len2, i = 0, j = 0, k = 0;
+unsigned int len1, len2, i = 0, j = 0, k = 0;
 char *s;
 s = check_Null(s1, s2);
 if (s == NULL)
