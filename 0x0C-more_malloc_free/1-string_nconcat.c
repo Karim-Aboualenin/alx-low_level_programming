@@ -96,7 +96,7 @@ unsigned int len1, len2, i = 0, j = 0, k = 0;
 char *s;
 s = check_Null(s1, s2, n);
 if (s == NULL)
-{
+return(n);
 len1 = _strlen(s1);
 len2 = _strlen(s2);
 if (n >= len2)
@@ -111,7 +111,6 @@ s[i] = s1[i];
 for (j = i; j < len2 + i; j++)
 {
 s[j] = s2[k++];
-}
 }
 return (s);
 }
