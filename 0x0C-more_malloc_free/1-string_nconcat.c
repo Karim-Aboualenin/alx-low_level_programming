@@ -32,11 +32,11 @@ return (len);
  * check_Null- handle null strings
  * @s1: the first string
  * @s2: the second string
- 
+ * @n: the first n bytes of s2
  * Return: the pointer if it's null
 */
 
-char *check_Null(char *s1, char *s2, unsigned n)
+char *check_Null(char *s1, char *s2, unsigned int n)
 {
 unsigned int len1, len2, i;
 char *s;
@@ -51,25 +51,21 @@ s = malloc((len1) *sizeof(char) + 1);
 if (s == NULL)
 return (NULL);
 for (i = 0; i < len1; i++)
-{
 s[i] = s1[i];
-}
 return (s);
 }
 if (len1 == 0)
 {
 if (n >= len2)
 {
-s = malloc((len2) *sizeof(char) + 1);
+s = malloc((len2) * sizeof(char) + 1);
 if (s == NULL)
 return (NULL);
 for (i = 0; i < len2; i++)
-{
 s[i] = s2[i];
-}
 return (s);
 }
-s = malloc((n) *sizeof(char) + 1);
+s = malloc((n) * sizeof(char) + 1);
 if (s == NULL)
 return (NULL);
 for (i = 0; i < n; i++)
