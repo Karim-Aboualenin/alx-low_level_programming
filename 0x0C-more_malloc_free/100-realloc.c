@@ -16,16 +16,16 @@ unsigned int i, size;
 char *s;
 if (new_size == old_size)
 return (ptr);
+if (new_size == 0 && ptr != NULL)
+{
+free(ptr);
+return (ptr);
+}
 if (ptr == NULL)
 {
 ptr = malloc(new_size);
 if (ptr == NULL)
 return (NULL);
-return (ptr);
-}
-if (new_size == 0 && ptr != NULL)
-{
-free(ptr);
 return (ptr);
 }
 s = ptr;
