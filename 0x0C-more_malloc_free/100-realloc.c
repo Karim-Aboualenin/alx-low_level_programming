@@ -32,7 +32,7 @@ s = malloc(new_size);
 if (new_ptr == NULL)
 return (NULL);
 for (i = 0; i < old_size && i < new_size; i++)
-new_ptr[i] = *((char *)(ptr) + i);
+s[i] = *((char *)(ptr) + i);
 free(ptr);
-return (new_ptr);
+return (s);
 }
