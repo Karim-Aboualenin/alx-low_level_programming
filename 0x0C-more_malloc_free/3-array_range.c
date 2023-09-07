@@ -18,5 +18,5 @@ if (arr == NULL)
 return (NULL);
 for (i = min; i < max; i++)
 arr[j++] = i;
-return (j);
+return (arr);
 }
