@@ -3,16 +3,6 @@
 #include <stdlib.h>
 
 /**
- * str_nconcat - a function that concatenates two strings.
- * @s1: the first sting
- * @s2: the second string
- * @n: the first bytes of s2 to be concatenated
- * Return: pointer should point to
- * a newly allocated space in memory which contains
- * the contents of s1, the first n bytes of s2, and null terminated
- */
-
-/**
  * _strlen - return the length of string
  * @s: the string
  * Return: the length of the string
@@ -78,13 +68,13 @@ return (NULL);
 }
 
 /**
- * str_concat - a function that concatenates two strings.
+ * str_nconcat - a function that concatenates two strings.
  * @s1: the first sting
  * @s2: the second string
- * @n: the first n bytes of s2
+ * @n: the first bytes of s2 to be concatenated
  * Return: pointer should point to
  * a newly allocated space in memory which contains
- * the contents of s1,followed by the first n bytes of s2, and null terminated
+ * the contents of s1, the first n bytes of s2, and null terminated
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
