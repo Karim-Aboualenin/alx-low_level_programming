@@ -39,7 +39,7 @@ if (n >= len2)
 {
 n = len2;
 }
-s = malloc((len1 + n) *sizeof(char) + 1);
+s = malloc((len1 + n) *sizeof(*s) + 1);
 if (s == NULL)
 return (NULL);
 for (i = 0; i < len1; i++)
