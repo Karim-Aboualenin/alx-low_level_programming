@@ -29,11 +29,11 @@ return (NULL);
 else
 return (s);
 }
-s = malloc(new_size); 
+s = malloc(new_size);
 if (s == NULL)
 return (NULL);
 for (i = 0; i < old_size && i < new_size; i++)
 *((char *)s + i) = *((char *)ptr + i);
-free(ptr); 
+free(ptr);
 return (s);
 }
