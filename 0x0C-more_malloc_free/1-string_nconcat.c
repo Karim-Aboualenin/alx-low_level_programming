@@ -29,24 +29,27 @@ return (i);
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-unsigned int len1, len2, i = 0, j = 0, k = 0;
-char *s;
-len1 = _strlen(s1);
-len2 = _strlen(s2);
-if (n >= len2)
-{
-n = len2;
-}
-s = malloc((len1 + n) *sizeof(*s) + 1);
-if (s == NULL)
-return (NULL);
-for (i = 0; i < len1; i++)
-{
-s[i] = s1[i];
-}
-for (j = i; j < n + i; j++)
-{
-s[j] = s2[k++];
-}
-return (s);
+	unsigned int i, len1, len2;
+	char *s;
+
+	if (s1 == NULL)
+		s1 = "";
+	if (s2 == NULL)
+		s2 = "";
+
+	len1 = _strlen(s1);
+	len2 = _strlen(s2);
+	n = n > len2 ? len2 : n;
+
+	str = malloc(sizeof(*s) * (len1 + n + 1));
+	if (s == NULL)
+		return (NULL);
+
+	for (i = 0; i < len1; i++)
+		s[i] = s1[i];
+	for (i = 0; i < n; i++)
+		s[len1 + i] = s2[i];
+	s[len1 + n] = '\0';
+
+	return (str);
 }
