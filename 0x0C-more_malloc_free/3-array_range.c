@@ -8,6 +8,7 @@
  * @max: maximum number
  * Return: pointer to the allocated array
  */
+
 int *array_range(int min, int max)
 {
 int i, j = 0;
