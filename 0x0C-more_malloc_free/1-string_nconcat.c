@@ -126,6 +126,5 @@ for (j = i; j < n + i; j++)
 {
 s[j] = s2[k++];
 }
-}
 return (s);
 }
