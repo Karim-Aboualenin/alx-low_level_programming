@@ -19,9 +19,9 @@ if (new_size == 0 && ptr != NULL)
 free(ptr);
 return (NULL);
 }
-if (new_size == old_size) /* return ptr if reallocating same old size */
+if (new_size == old_size)
 return (ptr);
-if (ptr == NULL) /* malloc new size if ptr is originally null */
+if (ptr == NULL)
 {
 s = malloc(new_size);
 if (s == NULL)
@@ -30,10 +30,10 @@ else
 return (s);
 }
 s = malloc(new_size); 
-if (p == NULL)
+if (s == NULL)
 return (NULL);
 for (i = 0; i < old_size && i < new_size; i++)
 *((char *)s + i) = *((char *)ptr + i);
-free(ptr); /* free old ptr */
+free(ptr); 
 return (s);
 }
