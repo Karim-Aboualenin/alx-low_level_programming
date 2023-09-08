@@ -20,19 +20,6 @@ return (1);
 }
 
 /**
- * print_Error - print Error using putchar
- * Return: nothing
- */
-
-void print_Error(char *str)
-{
-int i = 0;
-for (i = 0; str[i]; i++)
-_putchar(str[i]);
-_putchar('\n');
-}
-
-/**
  * is_zero - indicate if string is zero or not
  * @s: string to check
  * Return: 1 if c is zero and 0 otherwise
@@ -78,7 +65,7 @@ len2 = _strlen(num2);
 result = malloc(len1 + len2 + 1);
 if (result == NULL)
 {
-print_Error("Error");
+printf("Error\n");
 exit(98);
 }
 for (i = 0; i < len1 + len2; i++)
@@ -91,7 +78,7 @@ for (j = len2 - 1, k = i + len2; j >= 0; j--, k--)
 {
 a = num1[i] - '0';
 b = num2[j] - '0';
-carry = (a * b) + (result[k] - '0') + carry;
+carry = (a *b) +(result[k] - '0') + carry;
 result[k] = carry % 10 + '0';
 carry = carry / 10;
 }
@@ -117,6 +104,7 @@ return (result);
 int main(int argc, char *argv[])
 {
 char *num1, *num2, *result;
+int i;
 num1 = argv[1];
 num2 = argv[2];
 if (argc != 3 || _isdigit(num1) == 0 || _isdigit(num2) == 0)
@@ -126,12 +114,13 @@ exit (98);
 }
 if (is_zero(num1) == 1 || is_zero(num2) == 1)
 {
-_putchar('0');
-_putchar('\n');
+printf("0\n");
 return (0);
 }
 result = mul(num1, num2);
-print_Error(result);
+while (result[i] !='\0');
+printf("%c",result[i++];
+printf("\n");
 free(result);
 return (0);
 }
