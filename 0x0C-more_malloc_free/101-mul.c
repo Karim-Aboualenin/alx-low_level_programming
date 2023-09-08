@@ -109,7 +109,7 @@ num1 = argv[1];
 num2 = argv[2];
 if (argc != 3 || _isdigit(num1) == 0 || _isdigit(num2) == 0)
 {
-print_Error("Error");
+printf("Error");
 exit (98);
 }
 if (is_zero(num1) == 1 || is_zero(num2) == 1)
@@ -118,7 +118,7 @@ printf("0\n");
 return (0);
 }
 result = mul(num1, num2);
-while (result[i] !='\0');
+while (result[i] !='\0')
 printf("%c",result[i++];
 printf("\n");
 free(result);
