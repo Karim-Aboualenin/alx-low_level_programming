@@ -21,7 +21,7 @@ return (1);
 
 /**
  * is_zero - indicate if string is zero or not
- * @s: string to check
+ * @str: string to check
  * Return: 1 if c is zero and 0 otherwise
  */
 int is_zero(char *str)
@@ -110,7 +110,7 @@ num2 = argv[2];
 if (argc != 3 || _isdigit(num1) == 0 || _isdigit(num2) == 0)
 {
 printf("Error");
-exit (98);
+exit(98);
 }
 if (is_zero(num1) == 1 || is_zero(num2) == 1)
 {
@@ -118,8 +118,8 @@ printf("0\n");
 return (0);
 }
 result = mul(num1, num2);
-while (result[i] !='\0')
-printf("%c",result[i++];
+while (result[i] != '\0')
+printf("%c", result[i++]);
 printf("\n");
 free(result);
 return (0);
