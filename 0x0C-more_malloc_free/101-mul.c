@@ -44,8 +44,8 @@ for (i = 0; str[i] != '\0'; i++)
 {
 if (str[i] != '0')
 return (0);
-return (1);
 }
+return (1);
 }
 /**
  * _strlen - return the length of string
@@ -117,7 +117,6 @@ return (result);
 int main(int argc, char *argv[])
 {
 char *num1, *num2, *result;
-int i;
 num1 = argv[1];
 num2 = argv[2];
 if (argc != 3 || _isdigit(num1) == 0 || _isdigit(num2) == 0)
