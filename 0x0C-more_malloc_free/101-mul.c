@@ -4,7 +4,7 @@
 
 /**
  * _isdigit - indicate if strig is digit or not
- * @s: string to check
+ * @str: string to check
  * Return: 1 if c is digit and 0 otherwise
  */
 
