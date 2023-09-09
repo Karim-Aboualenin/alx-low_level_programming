@@ -55,12 +55,6 @@ return (len);
  * @num2: second number
  * Return: pointer to the result
  */
-/**
- * mul - a function that multiplies two positive numbers.
- * @num1: first number
- * @num2: second number
- * Return: pointer to the result
- */
 char *mul(char *num1, char *num2)
 {
 int len1, len2, carry, i, j, k, a, b, n = 0, tmp;
