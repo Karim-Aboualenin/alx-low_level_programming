@@ -111,7 +111,7 @@ char *num1, *num2, *result;
 int i;
 num1 = argv[1];
 num2 = argv[2];
-if (argc != 3 || _isdigit(num1) == -1 || _isdigit(num2) == 1)
+if (argc != 3 || _isdigit(num1) == -1 || _isdigit(num2) == -1)
 {
 printf("Error\n");
 exit(98);
