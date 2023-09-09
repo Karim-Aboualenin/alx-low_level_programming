@@ -8,15 +8,14 @@
  * Return: 1 if c is digit and 0 otherwise
  */
 
-int _isdigit(char *s)
+int _isdigit(char *str)
 {
-int i;
-for (i = 0; s[i] != '\0'; i++)
-{
-if (s[i] < '0' && s[i] > '9')
-return (0);
-}
-return (1);
+	int i;
+
+	for (i = 0; str[i]; i++)
+		if (str[i] < 48 || str[i] > 57)
+			return (-1);
+	return (0);
 }
 
 /**
@@ -109,9 +108,10 @@ num1 = argv[1];
 num2 = argv[2];
 if (argc != 3 || _isdigit(num1) == 0 || _isdigit(num2) == 0)
 {
-printf("Error");
+printf("Error\n");
 exit(98);
 }
+printf("pass digit");
 if (is_zero(num1) == 1 || is_zero(num2) == 1)
 {
 printf("0\n");
