@@ -48,12 +48,7 @@ s++;
 return (len);
 }
 
-/**
- * mul - a function that multiplies two positive numbers.
- * @num1: first number
- * @num2: second number
- * Return: pointer to the result
- */
+
 /**
  * mul - a function that multiplies two positive numbers.
  * @num1: first number
