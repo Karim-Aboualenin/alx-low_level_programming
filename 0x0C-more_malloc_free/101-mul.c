@@ -1,4 +1,3 @@
-#include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -49,6 +48,12 @@ s++;
 return (len);
 }
 
+/**
+ * mul - a function that multiplies two positive numbers.
+ * @num1: first number
+ * @num2: second number
+ * Return: pointer to the result
+ */
 /**
  * mul - a function that multiplies two positive numbers.
  * @num1: first number
@@ -111,6 +116,7 @@ if (argc != 3 || _isdigit(num1) == -1 || _isdigit(num2) == 1)
 printf("Error\n");
 exit(98);
 }
+
 if (is_zero(num1) == 1 || is_zero(num2) == 1)
 {
 printf("0\n");
