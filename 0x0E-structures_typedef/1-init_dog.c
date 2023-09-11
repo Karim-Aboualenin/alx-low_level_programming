@@ -1,11 +1,11 @@
 #include "dog.h"
 /**
- * init_dog - a function that initialize a variable of 
+ * init_dog - a function that initialize a variable of
  * type struct dog
  * @d: The structure
  * @name: the name of the dog
  * @age: the age of the dog
- * @owner: the owner of the dog 
+ * @owner: the owner of the dog
  * Return: On success 1.
  * On error, -1 is returned, and errno is set appropriately.
  */
