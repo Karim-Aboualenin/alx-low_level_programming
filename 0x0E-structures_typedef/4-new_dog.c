@@ -47,7 +47,7 @@ char *nmae, *onwer;
 dog = malloc(sizeof(dog_t));
 if (dog == NULL)
 return (NULL);
-nmae = malloc(_strlen(name) * sizeof(char) + 1); 
+nmae = malloc(_strlen(name) * sizeof(char) + 1);
 if (nmae == NULL)
 {
 free(dog);
