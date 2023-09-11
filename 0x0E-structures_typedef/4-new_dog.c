@@ -28,14 +28,9 @@ int len, i;
 len = _strlen(src);
 for (i = 0; i <= len; i++)
 {
-*dest = *src;
-dest++;
-src++;
+dest[i] = src[i];
 }
-for (i = 0; i <= len; i++)
-{
-dest--;
-}
+dest[i] = '\0';
 return (dest);
 }
 /**
@@ -52,15 +47,16 @@ char *nmae, *onwer;
 dog = malloc(sizeof(dog_t));
 if (dog == NULL)
 return (NULL);
-nmae = malloc(_strlen(name) * sizeof(char));
+nmae = malloc(_strlen(name) * sizeof(char) + 1); 
 if (nmae == NULL)
 {
 free(dog);
 return (NULL);
 }
-onwer = malloc(_strlen(owner) * sizeof(char));
+onwer = malloc(_strlen(owner) * sizeof(char) + 1);
 if (onwer == NULL)
 {
+free(nmae);
 free(dog);
 return (NULL);
 }
