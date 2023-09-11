@@ -62,7 +62,6 @@ return (NULL);
 }
 _strcpy(nmae, name);
 _strcpy(onwer, owner);
-printf("%s",nmae);
 dog->name = nmae;
 dog->age = age;
 dog->owner = onwer;
