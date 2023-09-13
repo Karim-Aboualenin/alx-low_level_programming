@@ -20,7 +20,6 @@ op_t ops[] = {
         {NULL, NULL}
     };
 int i = 0;
-printf("operator is %s\n",s);
 while (i < 4)
 {
 if (strcmp(s,ops[i].op) == 0)

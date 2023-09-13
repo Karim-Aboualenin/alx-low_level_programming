@@ -13,7 +13,6 @@ int (*operate)(int , int);
 int num1 ,num2;
 int result;
 char* op;
-printf("argc = %d\n", argc);
 if (argc != 4)
 {
 printf ("Error\n");
