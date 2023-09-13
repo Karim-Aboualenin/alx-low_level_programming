@@ -19,6 +19,7 @@ op_t ops[] = {
         {"%", op_mod},
         {NULL, NULL}
     };
+printf("operator is %c",*s);
 int i = 0;
 while (i < 4)
 {
