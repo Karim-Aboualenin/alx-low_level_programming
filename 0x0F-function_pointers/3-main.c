@@ -19,8 +19,8 @@ printf ("Error\n");
 exit(98);
 }
 op = argv[2];
-num1 = atoi(*argv[1]);
-num2 = atoi(*argv[3]);
+num1 = atoi(argv[1]);
+num2 = atoi(argv[3]);
 operate = get_op_func(op);
 if (operate == 0)
 {
