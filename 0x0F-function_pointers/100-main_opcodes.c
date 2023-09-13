@@ -26,7 +26,6 @@ while (i < byte)
 {
 if (i == 0)
 {
-printf("%d\n",i);
 printf("%02x", *((char *)main + i));
 i++;
 continue;
