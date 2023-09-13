@@ -1,6 +1,6 @@
 #include "3-calc.h"
 
-**
+/**
  * main - check the code
  * argc: thr number of arguments
  * argv: the array of arguments
