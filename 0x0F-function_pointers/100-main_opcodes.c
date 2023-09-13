@@ -24,6 +24,7 @@ exit(2);
 }
 while (i < byte)
 {
+printf("%d\n",i);
 if (i == 0)
 {
 printf("%02x", *((char *)main + i));
