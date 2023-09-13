@@ -17,13 +17,13 @@ printf ("Error");
 exit(98);
 }
 op = *argv[2];
-if (op != '+' && op != '-' && op != '*' && argv[2] != '/')
+if (op != '+' && op != '-' && op != '*' && op != '/')
 {
 printf ("Error");
 exit(99);
 }
-num1 = argv[1];
-num2 = argv[2];
+num1 = *argv[1];
+num2 = *argv[2];
 get_op_func(op))(num1, num2);
 return (0);
 }
