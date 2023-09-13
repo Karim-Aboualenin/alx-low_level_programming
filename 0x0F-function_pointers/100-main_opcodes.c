@@ -25,8 +25,13 @@ exit(2);
 while (i < byte)
 {
 if (i == 0)
+{
 printf("%02x", *(char *)main);
+i++;
+continue;
+}
 printf(" %02x", *((char *)main + i));
+i++;
 }
 printf("\n");
 return (0);
