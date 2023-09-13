@@ -16,11 +16,11 @@ if (argc > 4)
 printf ("Error");
 exit(98);
 }
-op = argv[2];
+op = *argv[2];
 if (op != '+' && op != '-' && op != '*' && argv[2] != '/')
 {
 printf ("Error");
-exit(99)
+exit(99);
 }
 num1 = argv[1];
 num2 = argv[2];
