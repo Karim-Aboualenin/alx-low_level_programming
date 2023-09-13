@@ -20,10 +20,10 @@ op_t ops[] = {
         {NULL, NULL}
     };
 int i = 0;
-printf("operator is %c",*s);
+printf("operator is %s\n",s);
 while (i < 4)
 {
-if (s == ops[i].op)
+if (strcmp(s,ops[i].op) == 0)
 {
 return (ops[i].f);
 }
