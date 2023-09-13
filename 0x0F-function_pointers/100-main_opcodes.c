@@ -30,7 +30,7 @@ printf("%02x", *((char *)main + i));
 i++;
 continue;
 }
-printf(" %02x", *((char *)main + i));
+printf(" %02x", *((unsigned char *)main + i));
 i++;
 }
 printf("\n");
