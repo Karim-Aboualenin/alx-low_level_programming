@@ -10,14 +10,14 @@
 int main(int argc, char *argv[])
 {
 int num1 ,num2;
-char op;
+char* op;
 if (argc > 4)
 {
 printf ("Error");
 exit(98);
 }
-op = *argv[2];
-if (op != '+' && op != '-' && op != '*' && op != '/')
+op = argv[2];
+if (*op != '+' && *op != '-' && *op != '*' && *op != '/')
 {
 printf ("Error");
 exit(99);
