@@ -26,7 +26,7 @@ while (i < byte)
 {
 if (i == 0)
 {
-printf("%02x", *(char *)main);
+printf("%02x", *((char *)main));
 i++;
 continue;
 }
