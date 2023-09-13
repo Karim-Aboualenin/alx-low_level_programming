@@ -15,7 +15,7 @@ int result;
 char* op;
 if (argc != 4)
 {
-printf ("Error\n");
+printf ("Errorsgvhx\n");
 exit(98);
 }
 op = argv[2];
