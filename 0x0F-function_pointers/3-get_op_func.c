@@ -20,7 +20,7 @@ op_t ops[] = {
         {NULL, NULL}
     };
 int i = 0;
-while (i < 4)
+while (i < 5)
 {
 if (strcmp(s,ops[i].op) == 0)
 {
