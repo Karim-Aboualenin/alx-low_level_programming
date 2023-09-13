@@ -19,8 +19,8 @@ op_t ops[] = {
         {"%", op_mod},
         {NULL, NULL}
     };
-printf("operator is %c",*s);
 int i = 0;
+printf("operator is %c",*s);
 while (i < 4)
 {
 if (s == ops[i].op)
