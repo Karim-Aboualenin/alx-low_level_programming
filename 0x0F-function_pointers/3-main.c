@@ -13,6 +13,7 @@ int (*operate)(int , int);
 int num1 ,num2;
 int result;
 char* op;
+printf("%d", argc);
 if (argc != 4)
 {
 printf ("Errorsgvhx\n");
