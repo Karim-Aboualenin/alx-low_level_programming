@@ -23,7 +23,7 @@ op = argv[2];
 num1 = atoi(argv[1]);
 num2 = atoi(argv[3]);
 operate = get_op_func(op);
-printf("printf("argc = %d\n", operate)");
+printf("argc = %d\n", operate);
 if (operate == 0)
 {
 printf ("Error\n");
