@@ -1,5 +1,6 @@
 {
     "files.associations": {
-        "typeinfo": "c"
+        "typeinfo": "c",
+        "3-calc.h": "c"
     }
 }
