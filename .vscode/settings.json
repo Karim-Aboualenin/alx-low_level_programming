@@ -1,6 +1,8 @@
 {
     "files.associations": {
         "typeinfo": "c",
-        "3-calc.h": "c"
+        "3-calc.h": "c",
+        "variadic_functions.h": "c",
+        "stdarg.h": "c"
     }
 }
