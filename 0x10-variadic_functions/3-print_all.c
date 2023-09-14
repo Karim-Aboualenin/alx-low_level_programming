@@ -56,20 +56,22 @@ args_t action[] = {
 };
 va_list args;
 va_start(args, format);
-while (format[i++] != '\0')
+while (format[i] != '\0')
 {
 j = 0;
 check = 0;
-while (action[j++].format != '\0')
+while (action[j].format != '\0')
 {
 if (format[i] == action[j].format)
 {
 action[j].f(args);
 check = 1;
 }
+j++;
 }
 if (check == 1 && format[i + 1] != '\0')
 printf (", ");
+i++
 }
 printf("\n");
 va_end(args);
