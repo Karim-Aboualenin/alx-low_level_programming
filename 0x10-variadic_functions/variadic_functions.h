@@ -13,7 +13,7 @@
  */
 typedef struct args_t
 {
-char* format;
+char format;
 void (*f)(va_list);
 } args_t;
 int sum_them_all(const unsigned int n, ...);

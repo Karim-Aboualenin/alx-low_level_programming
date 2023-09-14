@@ -65,7 +65,7 @@ while (action[j].format != '\0')
 if (format[i] == action[j].format)
 {
 action[j].f(args);
-check = 1
+check = 1;
 }
 }
 if (check == 1)
