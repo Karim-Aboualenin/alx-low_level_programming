@@ -37,8 +37,8 @@ printf("%f", va_arg(args, double));
 void print_string(va_list args)
 {
 char *name = va_arg(args, char *);
-/*if (name == NULL)
-name = "(nil)";*/
+if (name == NULL)
+name = "(nil)";
 printf("%s", name);
 }
 /**
@@ -49,7 +49,8 @@ printf("%s", name);
 
 void print_all(const char * const format, ...)
 {
-int i = 0, j = 0, check = 0;
+int i = 0, j = 0;
+char *seprator = "";
 args_t action[] = {
 {'c', print_char},
 {'i', print_int},
@@ -67,13 +68,12 @@ while (action[j].format != '\0')
 {
 if (format[i] == action[j].format)
 {
+printf("%s", seprator);
 action[j].f(args);
-check = 1;
+seprator = ", ";
 }
 j++;
 }
-if (check == 1 && format[i + 1] != '\0')
-printf(", ");
 i++;
 }
 printf("\n");
