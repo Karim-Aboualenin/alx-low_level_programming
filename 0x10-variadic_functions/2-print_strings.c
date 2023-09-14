@@ -17,7 +17,7 @@ for (i = 0; i < n; i++)
 {
 name = va_arg(args, char *);
 if (name == NULL)
-printf ("(nil)");
+printf("(nil)");
 else
 printf("%s", name);
 if (separator != NULL && i != n - 1)
