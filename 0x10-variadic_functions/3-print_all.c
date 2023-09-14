@@ -60,7 +60,7 @@ while (format[i++] != 0)
 {
 j = 0;
 check = 0;
-while (action[j].format != '\0')
+while (action[j++].format != '\0')
 {
 if (format[i] == action[j].format)
 {
