@@ -19,7 +19,7 @@ name = va_arg(args, char *);
 if (name == NULL)
 printf ("(nil)");
 else
-printf("%d", name);
+printf("%s", name);
 if (separator != NULL && i != n - 1)
 printf("%s", separator);
 }
