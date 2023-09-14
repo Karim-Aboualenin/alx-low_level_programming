@@ -48,11 +48,11 @@ void print_all(const char * const format, ...)
 {
 int i = 0, j = 0, check = 0;
 args_t action[] = {
-{"c", print_char},
-{"i", print_int},
-{"f", print_float},
-{"s", print_string},
-{NULL, NULL}
+{'c', print_char},
+{'i', print_int},
+{'f', print_float},
+{'s', print_string},
+{'\0', NULL}
 };
 va_list args;
 va_start(args, format);
@@ -62,7 +62,7 @@ j = 0;
 check = 0;
 while (action[j].format != '\0')
 {
-if (strcmp(format[i], action[j].format))
+if (format[i] == action[j].format)
 {
 action[j].f(args);
 check = 1
