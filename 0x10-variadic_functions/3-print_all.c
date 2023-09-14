@@ -4,7 +4,7 @@
  * @args: is the list of parameter
  * Return: nothing
  */
-void print_char (va_list args)
+void print_char(va_list args)
 {
 printf("%c", va_arg(args, int));
 }
@@ -14,7 +14,7 @@ printf("%c", va_arg(args, int));
  * @args: is the list of parameter
  * Return: nothing
  */
-void print_int (va_list args)
+void print_int(va_list args)
 {
 printf("%d", va_arg(args, int));
 }
@@ -24,7 +24,7 @@ printf("%d", va_arg(args, int));
  * @args: is the list of parameter
  * Return: nothing
  */
-void print_float (va_list args)
+void print_float(va_list args)
 {
 printf("%f", va_arg(args, double));
 }
@@ -34,9 +34,12 @@ printf("%f", va_arg(args, double));
  * @args: is the list of parameter
  * Return: nothing
  */
-void print_string (va_list args)
+void print_string(va_list args)
 {
-printf("%s", va_arg(args, char *));
+char *name = va_arg(args, char *);
+if (name == NULL)
+name = "(nil)";
+printf("%s", name);
 }
 /**
  * print_all -a function that prints anything.
@@ -70,7 +73,7 @@ check = 1;
 j++;
 }
 if (check == 1 && format[i + 1] != '\0')
-printf (", ");
+printf(", ");
 i++;
 }
 printf("\n");
