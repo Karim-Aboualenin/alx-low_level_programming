@@ -72,4 +72,5 @@ if (check == 1 && format[i + 1] != '\0')
 printf (", ");
 }
 printf("\n");
+va_end(args);
 }
