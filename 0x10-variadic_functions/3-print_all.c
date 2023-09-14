@@ -71,7 +71,7 @@ j++;
 }
 if (check == 1 && format[i + 1] != '\0')
 printf (", ");
-i++
+i++;
 }
 printf("\n");
 va_end(args);
