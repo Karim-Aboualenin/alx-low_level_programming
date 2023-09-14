@@ -1,9 +1,9 @@
 #include "variadic_functions.h"
 
 /**
- * print_dog - a function that prints a struct dog
- * @d: The structure
- * Return: nothing
+ * sum_them_all - a function that returns the sum of all its parameters.
+ * @n: number of the parameters
+ * Return: sum of all parameters
  */
 
 int sum_them_all(const unsigned int n, ...)
