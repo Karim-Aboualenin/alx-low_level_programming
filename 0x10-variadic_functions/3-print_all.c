@@ -1,16 +1,6 @@
 #include "variadic_functions.h"
 
-/**
- * struct args - Struct op
- *
- * @format: The format needed
- * @f: The function associated
- */
-typedef struct args_t
-{
-char format;
-void (*f)(va_list);
-} args_t;
+
 /**
  * print_char -a function that prints char.
  * @args: is the list of parameter
