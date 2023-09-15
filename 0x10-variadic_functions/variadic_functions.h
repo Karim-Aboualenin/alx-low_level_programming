@@ -5,7 +5,7 @@
 #include <stdlib.h>
 #include <stdarg.h>
 /**
- * struct args - Struct op
+ * struct args_t - Struct op
  *
  * @format: The format needed
  * @f: The function associated
