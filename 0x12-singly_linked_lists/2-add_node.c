@@ -34,7 +34,7 @@ if (Newnode == NULL)
 return (NULL);
 if (element == NULL)
 {
-free (Newnode);
+free(Newnode);
 return (NULL);
 }
 Newnode->str = element;
