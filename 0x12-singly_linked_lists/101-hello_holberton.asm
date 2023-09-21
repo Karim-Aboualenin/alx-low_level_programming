@@ -1,4 +1,4 @@
-message db "Hello, Holberton", 0
+message db "Hello, Holberton\n", 0
 global main
 
 main:
