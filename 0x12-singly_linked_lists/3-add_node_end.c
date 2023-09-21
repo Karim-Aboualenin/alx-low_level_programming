@@ -31,7 +31,7 @@ int len;
 char *element;
 element = strdup(str);
 tail = *head;
-if(*head !=NULL)
+if (*head != NULL)
 {
 while (tail->next != NULL)
 tail = tail->next;
@@ -48,9 +48,9 @@ Newnode->str = element;
 len = _strlen(element);
 Newnode->len = len;
 Newnode->next = NULL;
-if(*head == NULL)
+if (*head == NULL)
 *head = Newnode;
 else
-tail->next =Newnode;
+tail->next = Newnode;
 return (Newnode);
 }
