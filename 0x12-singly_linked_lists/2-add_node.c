@@ -19,7 +19,7 @@ return (len);
 /**
 * add_node -  a function that adds a new node at the
 * beginning of a list_t list
-* @h: the list
+* @head: the list
 * @str: the data in new node
 * Return: the address of the new element, or NULL if it failed
 */
@@ -31,7 +31,12 @@ char *element;
 element = strdup(str);
 Newnode = malloc(sizeof(list_t));
 if (Newnode == NULL)
-return NULL;
+return (NULL);
+if (element == NULL)
+{
+free (Newnode);
+return (NULL);
+}
 Newnode->str = element;
 len = _strlen(element);
 Newnode->len = len;
