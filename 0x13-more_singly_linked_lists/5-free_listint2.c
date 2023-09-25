@@ -5,15 +5,15 @@
 * @head: the list
 * Return: the number of nodes
 */
-void free_listint2(listint_t *head)
+void free_listint2(listint_t **head)
 {
 listint_t *node;
-if (head == NULL)
+if (*head == NULL)
 return;
-while (head != NULL)
+while (*head != NULL)
 {
-node = head->next;
-free(head);
-head = node;
+node = (*head)->next;
+free(*head);
+*head = node;
 }
 }
