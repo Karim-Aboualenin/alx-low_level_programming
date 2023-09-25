@@ -10,8 +10,10 @@
 int pop_listint(listint_t **head)
 {
 int element;
+listint_t *node;
+node = *head;
 element = (*head)->n;
 *head = (*head)->next;
-free (*head);
+free (node);
 return (element);
 }
