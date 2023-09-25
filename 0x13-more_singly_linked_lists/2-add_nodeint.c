@@ -31,7 +31,7 @@ element = n;
 Newnode = malloc(sizeof(listint_t));
 if (Newnode == NULL)
 return (NULL);
-Newnode->n = n;
+Newnode->n = element;
 Newnode->next = *head;
 *head = Newnode;
 return (Newnode);
