@@ -14,6 +14,6 @@ listint_t *node;
 node = *head;
 element = (*head)->n;
 *head = (*head)->next;
-free (node);
+free(node);
 return (element);
 }
