@@ -30,7 +30,7 @@ if (index - 1 == num)
 {
 deleted = current->next;
 current->next = current->next->next;
-free (deleted);
+free(deleted);
 return (1);
 }
 return (-1);
