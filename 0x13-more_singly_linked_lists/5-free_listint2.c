@@ -3,7 +3,7 @@
 /**
  * free_listint2 -  a function that frees a list_t list.
 * @head: the list
-* Return: the number of nodes
+* Return: nothing
 */
 void free_listint2(listint_t **head)
 {
