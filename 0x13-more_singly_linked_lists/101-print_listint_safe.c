@@ -17,13 +17,12 @@ difference = head - head->next;
 printf("[%p] ", (void *)head);
 printf("%d\n", head->n);
 num++;
+head = head->next;
 if (difference > 0)
 {
-head = head->next;
 }
 else
 {
-head = head->next;
 printf("-> [%p] ", (void *)head);
 printf("%d\n", head->n);
 break;
