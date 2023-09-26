@@ -10,21 +10,22 @@ size_t print_listint_safe(const listint_t *head)
 {
 int difference;
 size_t num = 0;
-while (head != NULL)
+const listint_t *current = head;
+while (current != NULL)
 {
-if (head->next != NULL)
-difference = head - head->next;
-printf("[%p] ", (void *)head);
-printf("%d\n", head->n);
+if (current->next != NULL)
+difference = current - current->next;
+printf("[%p] ", (void *)current);
+printf("%d\n", current->n);
 num++;
-head = head->next;
+current = current->next;
 if (difference > 0)
 {
 }
 else
 {
-printf("-> [%p] ", (void *)head);
-printf("%d\n", head->n);
+printf("-> [%p] ", (void *)current);
+printf("%d\n", current->n);
 break;
 }
 }
