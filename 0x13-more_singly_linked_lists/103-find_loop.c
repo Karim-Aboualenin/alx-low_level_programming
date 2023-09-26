@@ -9,23 +9,21 @@
 listint_t *find_listint_loop(listint_t *head)
 {
 int difference;
+void *address;
 while (head != NULL)
 {
 if (head->next != NULL)
 difference = head - head->next;
-printf("[%p] ", (void *)head);
-printf("%d\n", head->n);
-num++;
 head = head->next;
 if (difference > 0)
 {
 }
 else
 {
-printf("-> [%p] ", (void *)head);
-printf("%d\n", head->n);
+address = (void *)head;
+return (address);
 break;
 }
 }
-return (num);
+return (NULL);
 }
