@@ -19,6 +19,7 @@ difference = head - head->next;
 head = head->next;
 if (difference > 0)
 {
+continue;
 }
 else
 {
