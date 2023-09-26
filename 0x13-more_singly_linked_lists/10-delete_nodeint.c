@@ -5,7 +5,7 @@
  * index index of a listint_t linked list.
  * @head: the head of the list
  * @index: the index
- * Return: Always 0.
+ * Return: Always 1 if success and -1 if failed.
  */
 int delete_nodeint_at_index(listint_t **head, unsigned int index)
 {
