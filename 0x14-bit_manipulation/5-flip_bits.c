@@ -5,19 +5,20 @@
  * bits you would need to flip to get from
  * one number to another.
  * @n: the first number
- * @index: the second number
+ * @m: the second number
  * Return: the number of bits
 */
 
 unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
+unsigned long int diff;
 unsigned int num = 0;
-num = n ^ m;
-while (num > 0)
+diff = n ^ m;
+while (diff > 0)
 {
-if (num & 1)
+if (diff & 1)
 num++;
-num >>= 1;
+diff >>= 1;
 }
 return (num);
 }
