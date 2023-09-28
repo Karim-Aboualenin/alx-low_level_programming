@@ -17,7 +17,7 @@ len++;
 copy = copy >> 1;
 }
 if (len > 1)
-mask = mask << (len-1);
+mask = mask << (len - 1);
 while (mask > 0)
 {
 if ((n & mask))
