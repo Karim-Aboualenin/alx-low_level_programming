@@ -27,7 +27,7 @@ unsigned int binary_to_uint(const char *b)
 /*int i = 0, count, j = 0;
 double k;*/
 unsigned int num = 0;/*, binary;*/
-if (*b == NULL)
+if (b == NULL)
 {
 return (0);
 }
