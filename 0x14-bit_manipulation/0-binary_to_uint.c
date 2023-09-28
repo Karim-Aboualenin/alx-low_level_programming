@@ -1,4 +1,5 @@
 #include "main.h"
+#include <math.h>
 
 /**
  * binary_to_uint - a function that converts a binary number
@@ -25,7 +26,7 @@ i++;
 count = i;
 for (k = count - 1; k >= 0; k--)
 {
-binary = b[j] -48;
+binary = b[j] - 48;
 num += binary * (unsigned int)pow(2, k);
 j++;
 }
