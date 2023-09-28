@@ -1,6 +1,20 @@
 #include "main.h"
-#include <math.h>
+/**
+ * pow - get the power of number
+ * @base: the base
+ * @exponent: the exponent
+ * Return: the result
+*/
 
+double pow(double base, double exponent)
+{
+double result = 1.0;
+int i;
+for (i = 0; i < exponent; ++i) {
+result *= base;
+}
+return (result);
+}
 /**
  * binary_to_uint - a function that converts a binary number
  * to an unsigned int
