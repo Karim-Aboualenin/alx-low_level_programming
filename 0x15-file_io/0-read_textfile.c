@@ -16,7 +16,7 @@ return (0);
 message = malloc(sizeof(char) * letters);
 if (message == NULL)
 return (0);
-fd = open(filename, O_RDONLY);
+fd = open(filename, O_RDONLY, 600);
 if (fd == -1)
 {
 free(message);
@@ -31,7 +31,7 @@ return (0);
 wr = write(1, message, rd);
 if (wr == -1 || wr != rd)
 {
-free (message);
+free(message);
 return (0);
 }
 close(fd);
