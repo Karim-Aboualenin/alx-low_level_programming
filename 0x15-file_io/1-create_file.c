@@ -17,7 +17,7 @@ return (len);
 
 /**
  * create_file - Create a function that creates a file.
- * @filename: the name of the file 
+ * @filename: the name of the file
  * @text_content: a NULL terminated string to write to the file
  * Return: 1 in sucess ,-1 in faliure
 */
