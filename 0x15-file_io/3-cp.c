@@ -14,7 +14,7 @@ case (97):
 dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
 exit(97);
 case (98):
-dprintf(STDERR_FILENO, "Can't read from file %s\n", filename);
+dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", filename);
 exit(98);
 case (99):
 dprintf(STDERR_FILENO, "Error: Can't write to %s\n", filename);
