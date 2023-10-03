@@ -5,7 +5,7 @@
  * @e_ident: the ELF struct
  * return: Nothing
  */
-void verify(unsigned char *e_ident)
+void check_elf(unsigned char *e_ident)
 {
 if (e_ident[0] == 0x7f && e_ident[1] == 'E' &&
 e_ident[2] == 'L' && e_ident[3] == 'F')
@@ -150,14 +150,14 @@ printf("<unknown: %x>\n", e_ident[EI_OSABI]);
 void abi(unsigned char *e_ident)
 {
 printf("  ABI Version:                       "); 
-printf("%d\n",e_ident[EI_ABIVERSION])
+printf("%d\n",e_ident[EI_ABIVERSION]);
 }
 /**
  * type- print the type  of ELf
  * @e_ident: the ELF struct
  * return: Nothing
  */
-void type(unsigned char *e_ident)
+void type(unsigned int e_type, unsigned char *e_ident)
 {
 if (e_ident[EI_DATA] == ELFDATA2MSB)
 e_type >>= 8;
@@ -188,7 +188,7 @@ printf("<unknown: %x>\n", e_type);
  * @e_ident: the ELF struct
  * return: Nothing
  */
-void entry(unsigned char *e_ident)
+void entry(unsigned long int e_entry, unsigned char *e_ident)
 {
 printf("  Entry point address:               ");
 
@@ -211,7 +211,7 @@ printf("%#lx\n", e_entry);
  */
 int main(int ac, char **av)
 {
-int fd, wr, rd, cl;
+int fd, rd, cl;
 Elf64_Ehdr *elf;
 if (ac != 2)
 dprintf(STDERR_FILENO, "number of argments is not true\n"), exit(98);
@@ -222,13 +222,13 @@ fd = open(av[1], O_RDONLY);
 if (fd == -1)
 {
 free(elf);
-dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]) , exit(98);
+dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", av[1]) , exit(98);
 }
 rd = read(fd, elf, sizeof(Elf64_Ehdr));
 if (rd == -1)
 {
 free(elf);
-dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]), exit(98);
+dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", av[1]), exit(98);
 }
 check_elf(elf->e_ident);
 magic(elf->e_ident);
