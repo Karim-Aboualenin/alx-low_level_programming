@@ -50,12 +50,12 @@ if (fd_2 == -1)
 _leave (99, av[2], 0);
 while ((rd = read (fd_1, buffer, 1024)) > 0)
 {
+if (rd == -1)
+_leave (98, av[1], 0);
 wr = write (fd_2, buffer, rd);
 if (wr == -1)
 _leave (99, av[2], 0);
 }
-if (rd == -1)
-_leave (98, av[1], 0);
 cl_1 = close(fd_1);
 if(cl_1 == -1)
 _leave (100, NULL, fd_1);
