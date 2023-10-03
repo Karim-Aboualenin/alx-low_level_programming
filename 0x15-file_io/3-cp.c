@@ -62,4 +62,5 @@ _leave (100, NULL, fd_1);
 cl_2 = close(fd_2);
 if(cl_2 == -1)
 _leave (100, NULL, fd_2);
+return (0);
 }
