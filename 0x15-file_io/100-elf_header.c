@@ -240,6 +240,7 @@ abi(elf->e_ident);
 type(elf->e_type, elf->e_ident);
 entry(elf->e_entry, elf->e_ident);
 free(elf);
+cl = close(fd);
 if (cl == -1)
 {
 dprintf(STDERR_FILENO, "Error: Can't close the file\n");
