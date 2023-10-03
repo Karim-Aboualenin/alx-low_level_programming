@@ -45,7 +45,7 @@ _leave(97, NULL, 0);
 fd_1 = open(av[1], O_RDONLY);
 if (fd_1 == -1)
 _leave (98, av[1], 0);
-fd_2 = open(av[2], O_WRONLY | O_CREAT | O_TRUNC, 0664);
+fd_2 = open(av[2], O_WRONLY | O_CREAT | O_TRUNC, 0604);
 if (fd_2 == -1)
 _leave (99, av[2], 0);
 while ((rd = read (fd_1, buffer, 1024)) != 0)
