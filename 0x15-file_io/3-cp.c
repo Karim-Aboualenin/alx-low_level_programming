@@ -20,7 +20,7 @@ case (99):
 dprintf(STDERR_FILENO, "Error: Can't write to %s\n", filename);
 exit(99);
 case (100):
-dprintf(STDERR_FILENO, "Can't close fd %d\n", fd);
+dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd);
 exit(100);
 default:
 return (0);
