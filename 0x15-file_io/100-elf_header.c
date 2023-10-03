@@ -149,11 +149,12 @@ printf("<unknown: %x>\n", e_ident[EI_OSABI]);
  */
 void abi(unsigned char *e_ident)
 {
-printf("  ABI Version:                       "); 
-printf("%d\n",e_ident[EI_ABIVERSION]);
+printf("  ABI Version:                       ");
+printf("%d\n", e_ident[EI_ABIVERSION]);
 }
 /**
  * type- print the type  of ELf
+ * @e-type: data to compare
  * @e_ident: the ELF struct
  * return: Nothing
  */
@@ -185,6 +186,7 @@ printf("<unknown: %x>\n", e_type);
 }
 /**
  * entry- print the entry  of ELf
+ * @e_entry: data to print
  * @e_ident: the ELF struct
  * return: Nothing
  */
@@ -222,7 +224,7 @@ fd = open(av[1], O_RDONLY);
 if (fd == -1)
 {
 free(elf);
-dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", av[1]) , exit(98);
+dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", av[1]), exit(98);
 }
 rd = read(fd, elf, sizeof(Elf64_Ehdr));
 if (rd == -1)
