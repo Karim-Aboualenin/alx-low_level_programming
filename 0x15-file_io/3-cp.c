@@ -19,11 +19,11 @@ dprintf (STDERR_FILENO, "Can't read from file %s\n", filename);
 exit(98);
 break;
 case (99):
-dprintf (STDERR_FILENO, "Can't write to  %s\n", filename);
+dprintf (STDERR_FILENO, "Error: Can't write to %s\n", filename);
 exit(99);
 break;
 case (100):
-dprintf (STDERR_FILENO, "Can't close fd %d", fd);
+dprintf (STDERR_FILENO, "Can't close fd %d\n", fd);
 exit(100);
 break;
 default:
