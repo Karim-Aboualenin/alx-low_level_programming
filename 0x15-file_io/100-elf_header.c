@@ -154,7 +154,7 @@ printf("%d\n", e_ident[EI_ABIVERSION]);
 }
 /**
  * type- print the type  of ELf
- * @e-type: data to compare
+ * @e_type: data to compare
  * @e_ident: the ELF struct
  * return: Nothing
  */
