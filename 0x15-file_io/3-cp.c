@@ -13,13 +13,15 @@ switch (status)
 case (97):
 dprintf (STDERR_FILENO, "Usage: cp file_from file_to\n");
 exit(97);
-    break;
+break;
 case (98):
 dprintf (STDERR_FILENO, "Can't read from file %s\n", filename);
 exit(98);
+break;
 case (99):
 dprintf (STDERR_FILENO, "Can't write to  %s\n", filename);
 exit(99);
+break;
 case (100):
 dprintf (STDERR_FILENO, "Can't close fd %d", fd);
 exit(100);
@@ -45,7 +47,7 @@ _leave(97, NULL, 0);
 fd_1 = open(av[1], O_RDONLY);
 if (fd_1 == -1)
 _leave (98, av[1], 0);
-fd_2 = open(av[2], O_WRONLY | O_CREAT | O_TRUNC, 0604);
+fd_2 = open(av[2], O_WRONLY | O_CREAT | O_TRUNC, 0664);
 if (fd_2 == -1)
 _leave (99, av[2], 0);
 while ((rd = read (fd_1, buffer, 1024)) != 0)
