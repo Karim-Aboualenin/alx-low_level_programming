@@ -45,16 +45,17 @@ free(*head);
 *head = temp; 
 return (1);
 }
-if (index > len)
+if (index >= len)
 return (-1);
 while(tail->next != NULL)
 tail = tail->next;
-if (index == len)
+if (index == len - 1)
 {
 tail->prev->next = NULL;
 temp = tail->prev;
 free(tail);
 tail = temp;
+return (1);
 }
 for (i = 0; i < index; i++)
 {
