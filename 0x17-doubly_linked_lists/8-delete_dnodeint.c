@@ -31,7 +31,7 @@ dlistint_t *current = *head, *temp, *tail = *head;
 size_t len = dlistint_len(*head);
 size_t i;
 if (head == NULL || *head == NULL)
-return (0);
+return (-1);
 if (index == 0)
 {
 if (((*head)->next ==NULL) && index == 0)
@@ -46,7 +46,7 @@ free(*head);
 return (1);
 }
 if (index > len)
-return (0);
+return (-1);
 while(tail->next != NULL)
 tail = tail->next;
 if (index == len)
