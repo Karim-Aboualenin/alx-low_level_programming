@@ -12,7 +12,7 @@ size_t len;
 size_t i;
 dlistint_t *current = head;
 len = dlistint_len(head);
-if (index >= len || index < 0)
+if (index >= len)
 return (NULL);
 for(i = 0; i < index; i++)
 {
