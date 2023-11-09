@@ -32,7 +32,7 @@ dlistint_t *current = head;
 len = dlistint_len(head);
 if (index >= len)
 return (NULL);
-for(i = 0; i < index; i++)
+for (i = 0; i < index; i++)
 {
 current = current->next;
 }
