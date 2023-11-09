@@ -34,20 +34,20 @@ if (head == NULL || *head == NULL)
 return (-1);
 if (index == 0)
 {
-if (((*head)->next ==NULL) && index == 0)
+if (((*head)->next == NULL) && index == 0)
 {
 *head = NULL;
-return(1);
+return (1);
 }
 (*head)->next->prev = NULL;
 temp = (*head)->next;
 free(*head);
-*head = temp; 
+*head = temp;
 return (1);
 }
 if (index >= len)
 return (-1);
-while(tail->next != NULL)
+while (tail->next != NULL)
 tail = tail->next;
 if (index == len - 1)
 {
