@@ -18,7 +18,6 @@ current = current->next;
 return (num);
 }
 
-
 /**
  * insert_dnodeint_at_index - a function that inserts a new node at
  * a given position.
@@ -39,6 +38,11 @@ new = malloc(sizeof(dlistint_t));
 if (new == NULL)
 return (NULL);
 new->n = n;
+if (idx == 0)
+{
+new = add_dnodeint(h, n);
+return (new);
+}
 for (i = 0; i < idx; i++)
 {
 after = after->next;
