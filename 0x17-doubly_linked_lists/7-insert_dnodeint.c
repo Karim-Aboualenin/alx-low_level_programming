@@ -39,8 +39,10 @@ if (idx == 0 || (idx == 0 && *h == NULL))
 new = add_dnodeint(h, n);
 return (new);
 }
-if (idx >= len)
+if (idx > len)
 return (NULL);
+if (idx == len)
+return(add_dnodeint_end(h, n));
 new = malloc(sizeof(dlistint_t));
 if (new == NULL)
 return (NULL);
