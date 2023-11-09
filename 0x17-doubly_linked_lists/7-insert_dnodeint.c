@@ -22,7 +22,7 @@ return (num);
 /**
  * insert_dnodeint_at_index - a function that inserts a new node at
  * a given position.
- * @head: the head of list
+ * @h: the head of list
  * @idx: the position
  * @n: the new elemnt
  * Return: the address of the new node,
